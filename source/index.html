@@ -2,11 +2,12 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
-    <title>Мишка - магазин товаров ручной работы.</title>
+    <title>Мишка - магазин товаров ручной работы.
+    </title>
   </head>
-  <body page__body>
-    <header class="page-header">
-      <a class="page-header__logo">
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo">
         <img src="#" alt="Мишка - магазин товаров ручной работы." width="86" height="35">
       </a>
       <nav class="main-nav">
@@ -15,70 +16,103 @@
         </button>
         <ul class="main-nav__list menu">
           <li class="menu__item">
-            <a class="menu__link" href="catalog.html">
-              Каталог товаров
+            <a class="menu__link" href="catalog.html">Каталог товаров
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="form.html">
-              Вязание на заказ
+            <a class="menu__link" href="form.html">Вязание на заказ
             </a>
           </li>
-          <li class="menu__item">
-            <!-- это кнопка? или сразу инпут? немного непонятно по макету как это будет работать -->
-              Поиск по сайту
+          <li class="menu__item">Поиск по сайту
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
-              Корзина: пока пуста
+            <a class="menu__link" href="#">Корзина: пока пуста
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <section class="section-promo">
-        <h1 class="section-promo__title">Милые штуки ручной работы для дома</h1>
-        <a class="section-promo__link" href="#">Предметы интерьера</a>
-        <a class="section-promo__link" href="#">Детские игрушки</a>
+    <main class="main">
+      <section class="promo">
+        <h1 class="promo__title">Милые штуки ручной работы для дома
+        </h1>
+        <a class="promo__link" href="catalog.html" aria-label="Перейти в каталог">Предметы интерьера
+        </a>
+        <a class="spromo__link" href="catalog.html" aria-label="Перейти в каталог">Детские игрушки
+        </a>
       </section>
       <section class="popular-item">
-        <h2 class="popular-item__title">Вязаные корзинки</h2>
-        <p class="popular-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <h2 class="popular-item__title">Вязаные корзинки
+        </h2>
+        <p class="popular-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
           <dl class="popular-item__table">
-            <dt>Цвет:</dt>
-            <dd>«Тиффани»/серый</dd>
-            <dt>Диаметр:</dt>
-            <dd>25 см</dd>
-            <dt>Цвет</dt>
-            <dd>Белый</dd>
-            <dt>Высота:</dt>
-            <dd>15 см</dd>
+            <dt>Цвет:
+            </dt>
+            <dd>«Тиффани»/серый
+            </dd>
+            <dt>Диаметр:
+            </dt>
+            <dd>25 см
+            </dd>
+            <dt>Цвет
+            </dt>
+            <dd>Белый
+            </dd>
+            <dt>Высота:
+            </dt>
+            <dd>15 см
+            </dd>
           </dl>
         <img class="popular-item__img" src="#" alt="Вязаные корзинки" width="260" height="315">
-        <p class="popular-item__price">Цена: 990 руб.</p>
-        <button class="popular-item__button button" type="button">Заказать</button>
+        <p class="popular-item__price">Цена: 990 руб.
+        </p>
+        <button class="popular-item__button button" type="button">Заказать
+        </button>
       </section>
-      <section class="about-info">
-        <ul class="about-info__list">
-          <li class="about-info__list--link">Экологически чистые материалы</li>
-          <li class="about-info__list--link">Скандинавский стиль по российской цене</li>
-          <li class="about-info__list--link">Увеличивает лайки на фотографиях</li>
-          <li class="about-info__list--link">Связано вручную с любовью и умилением</li>
-          <li class="about-info__list--link">Поддержка отечественного производителя</li>
-          <li class="about-info__list--link">Поставляется в подарочной упаковке</li>
+      <section class="about">
+        <h2 class="about-title">Котротко о нас
+        </h2>
+        <ul class="about__list">
+          <li class="about__list--link">Экологически чистые материалы
+          </li>
+          <li class="about__list--link">Скандинавский стиль по российской цене
+          </li>
+          <li class="about__list--link">Увеличивает лайки на фотографиях
+          </li>
+          <li class="about__list--link">Связано вручную с любовью и умилением
+          </li>
+          <li class="about__list--link">Поддержка отечественного производителя
+          </li>
+          <li class="about__list--link">Поставляется в подарочной упаковке
+          </li>
         </ul>
       </section>
     </main>
-    <footer class="page-footer footer">
-      <div class="footer__social social">
-        <a class="social__link" href="#"><svg></svg></a>
-        <a class="social__link" href="#"><svg></svg></a>
-        <a class="social__link" href="#"><svg></svg></a>
-      </div>
+    <footer class="footer">
+      <ul class="footer__social social">
+        <li>
+          <a class="social__link" href="#" aria-label="Мишка в Инстаграм">
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="#" aria-label="Мишка в Фейсбуке">
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="#" aria-label="Мишка в Твиттере">
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
       <div class="footer__copyright copyright">
-        <p>Разработано</p>
-        <a class="copyright--link" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="HTML Academy"></a>
+        <p class="copyright__text">Разработано
+        </p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти в HTML Academy">
+          <img src="#" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>

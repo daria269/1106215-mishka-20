@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>Мишка - магазин товаров ручной работы.</title>
   </head>
-  <body page__body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="index.html" alt="Мишка - магазин товаров ручной работы." width="86" height="35">
+  <body class="page__body">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="#" alt="Мишка - магазин товаров ручной работы." width="86" height="35" title="Перейти на главную страницу">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -15,60 +15,92 @@
         </button>
         <ul class="main-nav__list menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">
-              Каталог товаров
+            <a class="menu__link" href="#">Каталог товаров
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="form.html">
-              Вязание на заказ
+            <a class="menu__link" href="form.html">Вязание на заказ
             </a>
           </li>
-          <li class="menu__item">
-            <!-- это кнопка? или сразу инпут? немного непонятно по макету как это будет работать -->
-              Поиск по сайту
+          <li class="menu__item">Поиск по сайту
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
-              Корзина: пока пуста
+            <a class="menu__link" href="#">Корзина: пока пуста
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="main">
       <h1>Каталог товаров</h1>
-      <section class="section-items">
-        <h2 class="section-items__title" class="visually-hidden">Товары в наличии</h2>
-        <article class="section-items__item item">
-          <img class="item__img" src="#" alt="Зайчик-попрыгайчик" width="260" height="195">
-          <h3 class="item__title">Зайчик-попрыгайчик</h3>
-          <p class="item__decription">Рост 30 см, вес 200 г</p>
-          <p class="item__price">1 200 руб.</p>
+      <section class="products">
+        <h2 class="products__title" class="visually-hidden">Товары в наличии
+        </h2>
+        <article class="products__item product">
+          <img class="product__img" src="#" alt="Игрушка зайчик" width="260" height="195" title="Зайчик-попрыгайчик">
+          <h3 class="product__title">Зайчик-попрыгайчик
+          </h3>
+          <p class="product__description">Рост 30 см, вес 200 г
+          </p>
+          <p class="product__price">1 200 руб.
+          </p>
+          <button type="button" aria-label="Добавить в корзину">
+            <svg>
+            </svg>
+          </button>
         </article>
-        <article class="section-items__item item">
-          <img class="item__img" src="#" alt="Корзинка для белья" width="260" height="195">
-          <h3 class="item__title">Корзинка для белья</h3>
-          <p class="item__decription">Диаметр 15 см, высота 10 см</p>
-          <p class="item__price">690 руб.</p>
+        <article class="products__item product">
+          <img class="product__img" src="#" alt="Корзинка для белья" width="260" height="195" title="Корзинка для белья">
+          <h3 class="product__title">Корзинка для белья
+          </h3>
+          <p class="product__description">Диаметр 15 см, высота 10 см
+          </p>
+          <p class="product__price">690 руб.
+          </p>
+          <button type="button" aria-label="Добавить в корзину">
+            <svg>
+            </svg>
+          </button>
         </article>
-        <article class="section-items__item item">
-          <img class="item__img" src="#" alt="Большая корзинка для игрушек" width="260" height="195">
-          <h3 class="item__title">Большая корзинка для игрушек</h3>
-          <p class="item__decription">Диаметр 30 см, высота 30 см</p>
-          <p class="item__price">1 500 руб.</p>
+        <article class="products__item product">
+          <img class="product__img" src="#" alt="Большая корзинка для игрушек" width="260" height="195" title="Большая корзинка для игрушек">
+          <h3 class="product__title">Большая корзинка для игрушек
+          </h3>
+          <p class="product__description">Диаметр 30 см, высота 30 см
+          </p>
+          <p class="product__price">1 500 руб.
+          </p>
+          <button type="button" aria-label="Добавить в корзину">
+            <svg>
+            </svg>
+          </button>
         </article>
       </section>
     </main>
-    <footer class="page-footer footer">
-      <div class="footer__social social">
-        <a class="social__link" href="#"><svg></svg></a>
-        <a class="social__link" href="#"><svg></svg></a>
-        <a class="social__link" href="#"><svg></svg></a>
-      </div>
+    <footer class="footer">
+      <ul class="footer__social social">
+        <li>
+          <a class="social__link" href="#" aria-label="Мишка в Инстаграм">
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="#" aria-label="Мишка в Фейсбуке">
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="#" aria-label="Мишка в Твиттере">
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
       <div class="footer__copyright copyright">
-        <p>Разработано</p>
-        <a class="copyright--link" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="HTML Academy"></a>
+        <p class="copyright__text">Разработано
+        </p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти в HTML Academy">
+          <img src="#" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
