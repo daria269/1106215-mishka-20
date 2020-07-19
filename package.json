@@ -4,10 +4,12 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "live-server": "^1.2.1",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
+    "start": "live-server --open=source",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
     "test": "npm run editorconfig"
