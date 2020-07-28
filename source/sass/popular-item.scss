@@ -1,0 +1,58 @@
+.popular-item {
+  color: $extra-dark;
+  padding: 30px;
+}
+
+.popular-item__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0;
+  display: grid;
+  row-gap: 5px;
+  margin: 0 0 20px 0;
+  &::after {
+    font-size: 17px;
+    line-height: 20px;
+    content: "Товар недели";
+    color: $light-blue;
+    text-transform: uppercase;
+  }
+}
+
+.popular-item__description {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+
+.popular-item__table {
+  display: grid;
+}
+
+.table__row {
+  border-bottom: 1px solid $grey-border;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.popular-item__img {
+  margin-top: 30px;
+}
+
+.popular-item__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 25px 0 0 0;
+  text-align: center;
+}
+
+.popular-item__button {
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  margin-top: 25px;
+}

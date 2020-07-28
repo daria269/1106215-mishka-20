@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page__body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  margin: 0;
+}
+
+.main__title {
+  background-color: $light-grey-bg;
+}
+
+.button {
+  display: block;
+  background: transparent;
+  font-weight: 700;
+  text-decoration: none;
+  color: $extra-dark;
+  border: 2px solid $extra-dark;
+}

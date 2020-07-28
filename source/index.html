@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - магазин товаров ручной работы.</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -13,7 +14,7 @@
         <button class="main-nav__toggle" type="button">
           <svg></svg>
         </button>
-        <ul class="main-nav__list menu">
+        <ul class="main-nav__list menu hidden">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -29,9 +30,9 @@
     </header>
     <main class="main">
       <section class="promo">
-        <h1 class="promo__title">Милые штуки ручной работы для дома</h1>
-        <a class="promo__link" href="catalog.html" aria-label="Перейти в каталог">Предметы интерьера</a>
-        <a class="promo__link" href="catalog.html" aria-label="Перейти в каталог">Детские игрушки</a>
+        <h1 class="promo__title">Милые штуки ручной работы&nbsp;для дома</h1>
+        <a class="promo__link promo__link--interior" href="catalog.html" aria-label="Перейти в каталог">Предметы<br>интерьера</a>
+        <a class="promo__link promo__link--toys" href="catalog.html" aria-label="Перейти в каталог">Детские<br>игрушки</a>
       </section>
       <section class="popular-item">
         <h2 class="popular-item__title">Вязаные корзинки</h2>
@@ -50,9 +51,9 @@
             <dd class="table__value">15 см</dd>
           </dl>
         </div>
-        <img class="popular-item__img" src="#" alt="Вязаные корзинки" width="260" height="315">
+        <img class="popular-item__img" src="./img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
         <p class="popular-item__price">Цена: 990 руб.</p>
-        <button class="popular-item__button button" type="button">Заказать</button>
+        <a href="#" class="popular-item__button button">Заказать</a>
       </section>
       <section class="about">
         <h2 class="about__title">Котротко о нас</h2>
@@ -65,35 +66,36 @@
           <li class="about__list--link">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="feedback">
-        <h2 class="feedback__title">Отзывы</h2>
-        <div class="feedback__card">
-          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <p class="feedback__author">Анастасия Красильникова
+      <section class="feedback-list">
+        <h2 class="feedback-list__title">Отзывы</h2>
+        <div class="feedback-list__card feedback">
+          <blockquote>
+            <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          </blockquote>
+          <cite class="feedback__author">Анастасия Красильникова
             <span class="feedback__author--nickname">@misssssiskras</span>
-          </p>
+          </cite>
         </div>
-        <div class="feedback__toggle toggle">
-          <div class="toggle--previous">
+        <div class="feedback-list__toggle toggle">
+          <button class="toggle__previous" aria-label="Посмотреть предыдущий отзыв">
             <svg></svg>
-          </div>
-          <div class="toggle--next">
+          </button>
+          <button class="toggle__next" aria-label="Посмотреть следующий отзыв">
             <svg></svg>
-          </div>
+          </button>
         </div>
         <button class="feedback__button" type="button">Написать</button>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <!-- блок.. умнее не придумала -->
-        <div class="contacts__block">
-          <dl class="contacts__item email">
-            <dt class="email__name">e-mail:</dt>
-            <dd class="email__value">info@mimimishkashop.ru</dd>
-          </dl>
-          <dl class="contacts__item address">
-            <dt class="address__name">Aдрес:</dt>
-            <dd class="address__value">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+        <div class="contacts__inner">
+          <dl class="contacts__item">
+            <dt class="contacts__item--name">e-mail:</dt>
+            <dd class="contacts__item--value">
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </dd>
+            <dt class="contacts__item--name">Aдрес:</dt>
+            <dd class="contacts__item--value">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</dd>
           </dl>
         </div>
         <div class="contacts__map">
