@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - магазин товаров ручной работы.</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -13,7 +14,7 @@
         <button class="main-nav__toggle" type="button">
           <svg></svg>
         </button>
-        <ul class="main-nav__list menu">
+        <ul class="main-nav__list menu hidden">
           <li class="menu__item">
             <a class="menu__link" href="#">Каталог товаров</a>
           </li>
@@ -28,59 +29,60 @@
       </nav>
     </header>
     <main class="main">
-      <h1>Каталог товаров</h1>
+      <h1 class="main__title">Каталог товаров</h1>
       <section class="products">
         <h2 class="products__title visually-hidden">Товары в наличии</h2>
         <article class="products__item product">
           <a href="#">
-            <img class="product__img" src="#" alt="Игрушка зайчик" width="260" height="195" title="Зайчик-попрыгайчик">
+            <img class="product__img" src="./img/photo-hare-mobile@1x.jpg" alt="Игрушка зайчик" width="260" height="195" title="Зайчик-попрыгайчик">
           </a>
-          <a>
-            <h3 class="product__title">Зайчик-попрыгайчик</h3>
-          </a>
+          <h3 class="product__title">
+            <a href="#">Зайчик-попрыгайчик</a>
+          </h3>
           <p class="product__description">Рост 30 см, вес 200 г</p>
           <p class="product__price">1 200 руб.</p>
-          <button  class="product__button" type="button" aria-label="Добавить в корзину">
+          <a href="#" class="product__button" aria-label="Добавить в корзину">
             <svg>
             </svg>
-          </button>
+          </a>
         </article>
         <article class="products__item product">
           <a>
-            <img class="product__img" src="#" alt="Корзинка для белья" width="260" height="195" title="Корзинка для белья">
+            <img class="product__img" src=".//img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195" title="Корзинка для белья">
           </a>
-          <a>
-            <h3 class="product__title">Корзинка для белья</h3>
-          </a>
+          <h3 class="product__title">
+            <a>Корзинка для белья</a>
+          </h3>
           <p class="product__description">Диаметр 15 см, высота 10 см</p>
           <p class="product__price">690 руб.</p>
-          <button  class="product__button" type="button" aria-label="Добавить в корзину">
+          <a href="#" class="product__button" aria-label="Добавить в корзину">
             <svg>
             </svg>
-          </button>
+          </a>
         </article>
         <article class="products__item product">
           <a>
-            <img class="product__img" src="#" alt="Большая корзинка для игрушек" width="260" height="195" title="Большая корзинка для игрушек">
+            <img class="product__img" src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195" title="Большая корзинка для игрушек">
           </a>
-          <a>
-            <h3 class="product__title">Большая корзинка для игрушек</h3>
-          </a>
+          <h3 class="product__title">
+            <a>Большая корзинка для игрушек</a>
+          </h3>
           <p class="product__description">Диаметр 30 см, высота 30 см</p>
           <p class="product__price">1 500 руб.</p>
-          <button  class="product__button" type="button" aria-label="Добавить в корзину">
+          <a href="#" class="product__button" aria-label="Добавить в корзину">
             <svg>
             </svg>
-          </button>
+          </a>
         </article>
       </section>
       <section class="production">
         <h2 class="production__title">Процесс производства</h2>
-        <figure class="production__video">
-          <img src="#" alt="Процесс производства">
+        <figure class="production__video video">
+          <img src="./img/video-mobile@1x.jpg" alt="Процесс производства">
+          <button class="video__button" aria-label="Смотреть видео"><svg></svg></button>
           <figcaption class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</figcaption>
         </figure>
-        <a href="form.html" class="production__button">Сделать заказ</a>
+        <a href="form.html" class="production__button button">Сделать заказ</a>
       </section>
     </main>
     <footer class="footer">

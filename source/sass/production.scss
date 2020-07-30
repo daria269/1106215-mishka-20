@@ -1,0 +1,35 @@
+.production {
+  margin: 0 30px 30px 30px;
+  padding: 0;
+  border: 1px solid $grey-border;
+}
+
+.production__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 20px;
+  margin: 0;
+}
+
+.production__video {
+  margin: 0;
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+}
+
+.production__text {
+  color: $extra-dark;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 30px;
+}
+
+.production__button {
+  width: 80%;
+  margin: 0 auto 30px;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - магазин товаров ручной работы.</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -28,8 +29,8 @@
       </nav>
     </header>
     <main class="main">
+      <h1 class="main__title">Вязание на заказ</h1>
       <section class="order">
-        <h1 class="order__title">Вязание на заказ</h1>
         <p class="order__note">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form form" action="" method="POST">
           <fieldset class="form__element type">
@@ -74,43 +75,42 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__element full-name">
+          <fieldset class="form__element option__item--column">
             <legend class="form__legend">ФИО</legend>
             <ul class="form__option option">
-              <li class="option__item">
-                <label class="option__name" for="name">Имя</label>
-                <input class="full-name__input" type="text" id="name" placeholder="Введите ваше имя*" required>
+              <li class="option__item option__item--column">
+                <label class="option__name" for="name">Имя:</label>
+                <input class="option__input" type="text" id="name" placeholder="Введите ваше имя*" required>
               </li>
-              <li class="option__item">
-                <label class="option__surname" for="surname">Фамилия</label>
-                <input class="full-name__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+              <li class="option__item option__item--column">
+                <label class="option__surname" for="surname">Фамилия:</label>
+                <input class="option__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="option__item">
-                <label class="option__patronymic" for="patronymic">Отчество</label>
-                <input class="full-name__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+              <li class="option__item option__item--column">
+                <label class="option__patronymic" for="patronymic">Отчество:</label>
+                <input class="option__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__element tel">
-            <legend class="form__legend">Тел</legend>
-            <label>
-              <input class="tel__input" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            </label>
-          </fieldset>
-          <fieldset class="form__element email">
-            <legend class="form__legend">E-mail</legend>
-            <label>
-              <input class="email__input" type="email" name="email" placeholder="Ваш Email*" required>
-            </label>
-          </fieldset>
-          <fieldset class="form__element additional">
-            <legend class="form__legend">Доп</legend>
-            <label>
-              <textarea class="additional__input" name="additional" rows="7" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </label>
+          <!-- я пока так оставлю, дойду до стилей будет более понятно . пока не вижу всей картины  -->
+          <fieldset class="form__element">
+            <ul class="form__option option">
+              <li class="option__item option__item--column">
+                <label class="form__legend form__legend--tel" for="tel">Тел</label>
+                <input class="option__input input" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              </li>
+              <li class="option__item option__item--column">
+                <label class="form__legend form__legend--email" for="email">E-mail</label>
+                <input class="option__input input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+              </li>
+              <li class="option__item option__item--column">
+                <label class="form__legend form__legend--additional" for="additional">Доп</label>
+                <textarea class="option__textarea input" id="additional" name="additional" rows="7" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </li>
+            </ul>
           </fieldset>
           <p class="form__notice">*Поля обязательны для заполнения</p>
-          <button class="form__button" type="submit">Отправить заказ</button>
+          <button class="form__button button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
