@@ -65,7 +65,7 @@
   font-size: 17px;
   line-height: 18px;
   color: $extra-dark;
-  box-shadow: inset 0px -2px 0px $basic-black;
+  box-shadow: inset 0 -2px 0 $basic-black;
 }
 
 .option__textarea {
@@ -73,11 +73,12 @@
   padding: 15px;
   width: 100%;
   border: 2px solid $extra-dark;
-  box-shadow: inset 0px -2px 0px $basic-black;
+  box-shadow: inset 0 -2px 0 $basic-black;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   color: $extra-dark;
+
   &::-moz-placeholder {
     font-family: "Open Sans", sans-serif;
   }

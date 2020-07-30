@@ -26,17 +26,20 @@
   margin: 0;
   grid-template-columns: max-content 1fr;
   column-gap: 30px;
-    &--name {
-      text-transform: lowercase;
-    }
-    &--value {
-      margin: 0;
-    }
-    & a {
-      color: inherit;
-      text-decoration: none;
-      margin: 0;
-    }
+
+  &--name {
+    text-transform: lowercase;
+  }
+
+  &--value {
+    margin: 0;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+  }
 }
 
 .contacts__button {

@@ -24,8 +24,10 @@
   line-height: 24px;
   padding: 25px 30px 30px;
   text-decoration: none;
+
   &--interior {
     background-color: $light-blue;
+
     &::after {
       content: url("../img/icon-interior.svg");
       position: absolute;
@@ -34,8 +36,10 @@
       opacity: 0.5;
     }
   }
+
   &--toys {
     background-color: $toys-bg;
+
     &::after {
       content: url("../img/icon-toy.svg");
       position: absolute;
