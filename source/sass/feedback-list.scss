@@ -1,0 +1,42 @@
+.feedback-list {
+  padding: 30px;
+  border-image: url("../img/bg-zigzag-line.svg");
+  border-image-width: 6px;
+  border-image-slice: 0 0 20 0;
+}
+
+.feedback-list__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 15px 0;
+}
+
+.feedback-list__card {
+  display: grid;
+  row-gap: 30px;
+}
+
+.feedback__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $extra-dark;
+}
+
+.feedback__author {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: none;
+  &--nickname {
+    color: $extra-dark;
+    font-weight: 400;
+  }
+}
+
+.feedback__button {
+  margin-top: 30px;
+}

@@ -27,6 +27,16 @@
 
 .main__title {
   background-color: $light-grey-bg;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
 .button {
@@ -34,6 +44,12 @@
   background: transparent;
   font-weight: 700;
   text-decoration: none;
+  text-transform: uppercase;
   color: $extra-dark;
   border: 2px solid $extra-dark;
+  text-align: center;
+  padding: 15px 10px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
 }

@@ -1,3 +1,28 @@
 .footer {
   background-color: $light-grey-bg;
+  padding: 30px;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 30px 0;
+  border-bottom: 1px solid $footer-border;
+}
+
+.footer__copyright {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  padding: 30px 0;
+}
+
+.copyright__text {
+  margin: 0;
 }

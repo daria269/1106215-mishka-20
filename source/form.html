@@ -75,19 +75,19 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__element form__element--full-name">
+          <fieldset class="form__element option__item--column">
             <legend class="form__legend">ФИО</legend>
             <ul class="form__option option">
-              <li class="option__item">
-                <label class="option__name" for="name">Имя</label>
+              <li class="option__item option__item--column">
+                <label class="option__name" for="name">Имя:</label>
                 <input class="option__input" type="text" id="name" placeholder="Введите ваше имя*" required>
               </li>
-              <li class="option__item">
-                <label class="option__surname" for="surname">Фамилия</label>
+              <li class="option__item option__item--column">
+                <label class="option__surname" for="surname">Фамилия:</label>
                 <input class="option__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="option__item">
-                <label class="option__patronymic" for="patronymic">Отчество</label>
+              <li class="option__item option__item--column">
+                <label class="option__patronymic" for="patronymic">Отчество:</label>
                 <input class="option__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
               </li>
             </ul>
@@ -95,22 +95,22 @@
           <!-- я пока так оставлю, дойду до стилей будет более понятно . пока не вижу всей картины  -->
           <fieldset class="form__element">
             <ul class="form__option option">
-              <li class="option__item">
-                <label class="form__legend" for="tel">Тел</label>
+              <li class="option__item option__item--column">
+                <label class="form__legend form__legend--tel" for="tel">Тел</label>
                 <input class="option__input input" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </li>
-              <li class="option__item">
-                <label class="form__legend" for="email">E-mail</label>
+              <li class="option__item option__item--column">
+                <label class="form__legend form__legend--email" for="email">E-mail</label>
                 <input class="option__input input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
               </li>
-              <li class="option__item">
-                <label class="form__legend" for="additional">Доп</label>
-                <textarea class="option__input input" id="additional" name="additional" rows="7" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <li class="option__item option__item--column">
+                <label class="form__legend form__legend--additional" for="additional">Доп</label>
+                <textarea class="option__textarea input" id="additional" name="additional" rows="7" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </li>
             </ul>
           </fieldset>
           <p class="form__notice">*Поля обязательны для заполнения</p>
-          <button class="form__button" type="submit">Отправить заказ</button>
+          <button class="form__button button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
