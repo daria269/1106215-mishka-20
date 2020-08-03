@@ -2,6 +2,7 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мишка - магазин товаров ручной работы.</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -10,17 +11,19 @@
       <a href="index.html" class="header__logo">
         <img src="#" alt="Мишка - магазин товаров ручной работы." width="86" height="35" title="Перейти на главную страницу">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <svg></svg>
         </button>
-        <ul class="main-nav__list menu">
+        <ul class="navigation__list menu menu--site">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Вязание на заказ</a>
           </li>
+        </ul>
+        <ul class="navigation__list menu menu--user">
           <li class="menu__item">Поиск по сайту</li>
           <li class="menu__item">
             <a class="menu__link" href="#">Корзина: пока пуста</a>
@@ -75,20 +78,20 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__element option__item--column">
+          <fieldset class="form__element">
             <legend class="form__legend">ФИО</legend>
             <ul class="form__option option">
               <li class="option__item option__item--column">
                 <label class="option__name" for="name">Имя:</label>
-                <input class="option__input" type="text" id="name" placeholder="Введите ваше имя*" required>
+                <input class="option__input input" type="text" id="name" placeholder="Введите ваше имя*" required>
               </li>
               <li class="option__item option__item--column">
                 <label class="option__surname" for="surname">Фамилия:</label>
-                <input class="option__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+                <input class="option__input input" type="text" id="surname" placeholder="Укажите фамилию*" required>
               </li>
               <li class="option__item option__item--column">
                 <label class="option__patronymic" for="patronymic">Отчество:</label>
-                <input class="option__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                <input class="option__input input" type="text" id="patronymic" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>

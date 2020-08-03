@@ -1,0 +1,18 @@
+.production {
+  border: 1px solid $grey-border;
+  margin: 0 30px 30px 30px;
+  padding: 0;
+}
+
+.production__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+  padding: 20px;
+}
+
+.production__button {
+  margin: 0 auto 30px;
+  width: 80%;
+}

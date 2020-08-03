@@ -1,0 +1,28 @@
+.about {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  padding: 30px;
+}
+
+.about__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 0 30px 0;
+}
+
+.about__list {
+  @include list-reset;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.about__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin: 0;
+  }
+}

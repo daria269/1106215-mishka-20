@@ -1,0 +1,9 @@
+.social {
+  @include list-reset;
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $footer-border;
+}

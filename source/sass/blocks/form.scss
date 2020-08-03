@@ -1,0 +1,46 @@
+.form__element {
+  border: none;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+
+.form__legend {
+  color: $light-blue;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  padding: 0;
+  margin-bottom: 25px;
+  // &::after {
+  //   content: "";
+  //   display: inline-block;
+  //   width: 100%;
+  //   height: 1px;
+  //   background-color: $light-blue;
+  // }
+}
+
+.form__legend--tel,
+.form__legend--email,
+.form__legend--additional {
+  margin: 0;
+}
+
+.form__option {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__notice {
+  font-size: 14px;
+  line-height: 16px;
+  color: $extra-dark;
+  margin: 0;
+  padding: 0;
+}
+
+.form__button {
+  margin-top: 30px;
+}
