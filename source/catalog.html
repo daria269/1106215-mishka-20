@@ -2,6 +2,7 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мишка - магазин товаров ручной работы.</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -10,17 +11,19 @@
       <a href="index.html" class="header__logo">
         <img src="#" alt="Мишка - магазин товаров ручной работы." width="86" height="35" title="Перейти на главную страницу">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <svg></svg>
         </button>
-        <ul class="main-nav__list menu hidden">
+        <ul class="navigation__list menu menu--site">
           <li class="menu__item">
             <a class="menu__link" href="#">Каталог товаров</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Вязание на заказ</a>
           </li>
+        </ul>
+        <ul class="navigation__list menu menu--site">
           <li class="menu__item">Поиск по сайту</li>
           <li class="menu__item">
             <a class="menu__link" href="#">Корзина: пока пуста</a>
@@ -80,7 +83,7 @@
         <figure class="production__video video">
           <img src="./img/video-mobile@1x.jpg" alt="Процесс производства">
           <button class="video__button" aria-label="Смотреть видео"><svg></svg></button>
-          <figcaption class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</figcaption>
+          <figcaption class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</figcaption>
         </figure>
         <a href="form.html" class="production__button button">Сделать заказ</a>
       </section>

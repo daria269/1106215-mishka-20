@@ -1,0 +1,40 @@
+.option {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.option__item {
+  display: flex;
+}
+
+.option__item--column {
+  flex-direction: column;
+}
+
+.option__input {
+  border: none;
+  border-bottom: 2px solid $basic-black;
+  color: $extra-dark;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 17px 0;
+}
+
+.option__textarea {
+  margin: 20px 0;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid $extra-dark;
+  border-bottom: 2px solid $basic-black;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: $extra-dark;
+
+  &::-moz-placeholder {
+    font-family: "Open Sans", sans-serif;
+  }
+}

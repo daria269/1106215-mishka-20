@@ -1,4 +1,7 @@
 .contacts {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
   padding: 30px;
 }
 
@@ -10,38 +13,35 @@
 
 .contacts__map {
   background-image: url("../img/map-mobile@1x.jpg");
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .contacts__inner {
   color: $extra-dark;
+  display: grid;
   font-size: 15px;
   line-height: 30px;
+  margin-bottom: 30px;
   row-gap: 30px;
-  display: grid;
 }
 
 .contacts__item {
-  display: grid;
-  margin: 0;
-  grid-template-columns: max-content 1fr;
   column-gap: 30px;
-
-  &--name {
-    text-transform: lowercase;
-  }
-
-  &--value {
-    margin: 0;
-  }
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin: 0;
 
   & a {
     color: inherit;
-    text-decoration: none;
     margin: 0;
+    text-decoration: none;
   }
 }
 
-.contacts__button {
-  margin-top: 30px;
+.contacts__item-name {
+  text-transform: lowercase;
+}
+
+.contacts__item-value {
+  margin: 0;
 }

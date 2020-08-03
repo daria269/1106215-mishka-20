@@ -1,0 +1,16 @@
+.video {
+  margin: 0;
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+}
+
+.video__text {
+  color: $extra-dark;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 30px;
+}
