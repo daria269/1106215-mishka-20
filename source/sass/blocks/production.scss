@@ -2,6 +2,10 @@
   border: 1px solid $grey-border;
   margin: 0 30px 30px 30px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 505px 50px 50px 50px;
+  }
 }
 
 .production__title {
@@ -10,9 +14,22 @@
   line-height: 24px;
   margin: 0;
   padding: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    margin-right: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 40px 40px 20px 40px;
+  }
 }
 
 .production__button {
-  margin: 0 auto 30px;
-  width: 80%;
+  margin-bottom: 30px;
 }

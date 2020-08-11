@@ -1,3 +1,14 @@
 .input {
+  font: inherit;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: $extra-dark;
   outline: none;
+
+  &::placeholder {
+    font: inherit;
+    color: $extra-dark;
+    opacity: 0.3;
+  }
 }

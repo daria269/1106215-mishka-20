@@ -1,3 +1,19 @@
 .navigation {
-  background-color: aqua;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: initial;
+  }
+}
+
+.navigation__toggle {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: -50px;
 }

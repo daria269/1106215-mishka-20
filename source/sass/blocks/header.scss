@@ -1,3 +1,17 @@
 .header {
-  background-color: yellow;
+  padding: 25px 0 0;
+}
+
+.header__logo {
+  border-bottom: 1px solid $grey-border;
+  display: block;
+  padding-bottom: 25px;
+}
+
+.header__logo-img {
+  margin: 0 auto 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+  }
 }

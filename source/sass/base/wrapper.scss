@@ -1,0 +1,12 @@
+.wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+  width: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}

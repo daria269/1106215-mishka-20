@@ -1,6 +1,11 @@
 .popular-item {
   color: $extra-dark;
-  padding: 30px;
+  padding: 30px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
 }
 
 .popular-item__title {
@@ -16,9 +21,27 @@
   &::after {
     font-size: 17px;
     line-height: 20px;
-    content: "Товар недели";
+    content: attr(data-description);
     color: $light-blue;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .popular-item__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0 0 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      line-height: 17px;
+      width: 125px;
+      text-align: center;
+    }
   }
 }
 
@@ -26,23 +49,29 @@
   font-size: 15px;
   line-height: 24px;
   margin: 0 0 20px;
-}
 
-.popular-item__table {
-  display: grid;
-  margin-bottom: 30px;
-}
-
-.table__row {
-  border-bottom: 1px solid $grey-border;
-  display: grid;
-  grid-template-columns: 30% 60%;
-  padding: 10px 0;
-  margin: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .popular-item__img {
+  width: 260px;
+  height: 315px;
   margin: 0 auto 25px;
+  background-image: url("../img/triple-set-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/triple-set-tablet@1x.jpg");
+    position: absolute;
+    width: 335px;
+    height: 405px;
+    top: 0;
+    right: -100%;
+  }
 }
 
 .popular-item__price {
@@ -51,4 +80,21 @@
   font-weight: 700;
   margin: 0 0 25px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .popular-item__inner {
+    width: 50%;
+    position: relative;
+    padding-right: 40px;
+    min-height: 405px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content min-content;
+  }
 }
