@@ -2,21 +2,60 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+}
+
+
+.color .option {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .option__item {
   display: flex;
+  margin-bottom: 25px;
 
-  &--column {
-    flex-direction: column;
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+}
+
+.color .option__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
+}
+
+.option__item--column {
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 6fr;
   }
 }
 
 .option__input {
   border: none;
   border-bottom: 2px solid $basic-black;
-  padding: 17px 0;
+  padding: 18px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 18px;
+  }
 }
 
 .option__textarea {
@@ -24,4 +63,52 @@
   padding: 15px;
   width: 100%;
   border: 2px solid $extra-dark;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.option__name {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.type .option__name::before {
+  content: "";
+  width: 42px;
+  height: 40px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 53px;
+  }
+}
+
+.type .option__radio:checked + .option__name::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.color .option__name::before {
+  content: "";
+  width: 38px;
+  height: 39px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 53px;
+  }
+}
+
+.color .option__checkbox:checked + .option__name::before {
+  background-image: url("../img/checkbox-on.svg");
 }

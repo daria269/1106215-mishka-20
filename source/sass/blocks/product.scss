@@ -8,6 +8,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 30px;
+  }
 }
 
 .product__img {
@@ -44,7 +50,6 @@
 
 .product__price {
   margin: 0;
-  padding-top: 30px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
@@ -61,12 +66,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
-    margin: 0 auto;
+    min-width: 55%;
   }
 }
 
-.product__button {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
+.product__price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
 }

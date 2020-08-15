@@ -1,0 +1,5 @@
+.color {
+  @media (min-width: $tablet-width) {
+    background-color: $light-grey-bg;
+  }
+}

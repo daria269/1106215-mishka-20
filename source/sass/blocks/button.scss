@@ -1,16 +1,13 @@
 .button {
-  background-color: transparent;
+  @include button-reset;
   border: 2px solid $extra-dark;
-  border-radius: 0;
   color: $extra-dark;
-  display: block;
-  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  outline: none;
-  padding: 15px 10px;
-  text-align: center;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
-  width: 100%;
 }

@@ -16,6 +16,13 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+.order__note.wrapper {
+  @media (min-width: $desktop-width) {
+    padding-right: 200px;
+    padding-left: 240px;
   }
 }

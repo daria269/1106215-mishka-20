@@ -1,0 +1,13 @@
+.additional {
+  @media (min-width: $tablet-width) {
+    align-items: inherit;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 200px;
+    padding-left: 100px;
+  }
+}

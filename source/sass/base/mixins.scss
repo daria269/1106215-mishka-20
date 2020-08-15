@@ -6,9 +6,12 @@
 
 @mixin button-reset {
   border: none;
-  border-right: 0;
+  border-radius: 0;
   background-color: transparent;
   padding: 0;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 @mixin link-decoration {

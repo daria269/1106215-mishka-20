@@ -1,17 +1,8 @@
 .video {
-  margin: 0;
-  position: relative;
-}
-
-.video__container {
   position: relative;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -235px;
-    margin: 0 auto;
-    display: block;
-    width: 100%;
+    order: -1;
   }
 }
 
@@ -26,6 +17,7 @@
   left: 50%;
   margin-top: -38px;
   margin-left: -50px;
+  cursor: pointer;
 }
 
 .video__text {
@@ -34,10 +26,17 @@
   font-size: 13px;
   line-height: 24px;
   padding: 30px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
     padding: 0 40px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    padding: 0 60px 0 70px;
+    margin-bottom: 50px;
   }
 }
