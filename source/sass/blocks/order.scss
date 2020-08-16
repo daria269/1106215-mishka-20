@@ -1,5 +1,9 @@
 .order {
-  padding: 15px 30px 55px;
+  padding: 20px 0 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
 }
 
 .order__note {
@@ -7,4 +11,18 @@
   font-size: 13px;
   line-height: 24px;
   margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.order__note.wrapper {
+  @media (min-width: $desktop-width) {
+    padding-right: 200px;
+    padding-left: 240px;
+  }
 }

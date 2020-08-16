@@ -1,3 +1,44 @@
 .header {
-  background-color: yellow;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.header__logo {
+  border-bottom: 1px solid $grey-border;
+  display: block;
+  flex-basis: 50%;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+    flex-basis: max-content;
+  }
+}
+
+.header__logo-img {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+  }
+}
+
+.header__note {
+  display: none;
+  margin: 0;
+  order: 4;
+  font-size: 15px;
+  line-height: 24px;
+  color: $extra-dark;
+  align-items: center;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

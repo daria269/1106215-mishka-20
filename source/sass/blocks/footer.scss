@@ -1,4 +1,24 @@
 .footer {
   background-color: $light-grey-bg;
-  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }

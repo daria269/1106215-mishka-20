@@ -1,3 +1,19 @@
 .navigation {
-  background-color: aqua;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+.navigation__toggle {
+  @include button-reset;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

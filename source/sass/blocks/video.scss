@@ -1,10 +1,23 @@
 .video {
-  margin: 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.video__img {
+  margin: 0 auto;
 }
 
 .video__button {
+  @include button-reset;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -38px;
+  margin-left: -50px;
+  cursor: pointer;
 }
 
 .video__text {
@@ -13,4 +26,17 @@
   font-size: 13px;
   line-height: 24px;
   padding: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 40px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    padding: 0 60px 0 70px;
+    margin-bottom: 50px;
+  }
 }
