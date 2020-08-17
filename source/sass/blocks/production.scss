@@ -1,10 +1,10 @@
 .production {
   border: 1px solid $grey-border;
-  margin: 0 30px 30px 30px;
   padding: 0;
+  margin-bottom: 60px;
+
 
   @media (min-width: $tablet-width) {
-    margin: 5px 50px 50px 50px;
     display: flex;
     flex-direction: column;
   }
@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     height: 455px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
   }
 }
 

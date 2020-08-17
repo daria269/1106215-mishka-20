@@ -1,10 +1,12 @@
 .footer {
   background-color: $light-grey-bg;
 
-  @media (min-width: $tablet-width) {
+  & .wrapper {
+    @media (min-width: $tablet-width) {
     display: grid;
     grid-column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 

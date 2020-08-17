@@ -15,7 +15,10 @@
 
 .option__item {
   display: flex;
-  margin-bottom: 25px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -63,6 +66,8 @@
   padding: 15px;
   width: 100%;
   border: 2px solid $extra-dark;
+  resize: none;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin: 0;

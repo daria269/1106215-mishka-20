@@ -23,13 +23,13 @@
 }
 
 .form__legend {
-  @media (min-width: $tablet-width) {
-    display: contents;
-  }
+  display: contents;
+
 }
 
 .form__legend-name {
-  display: block;
+  display: flex;
+  align-items: center;
   color: $light-blue;
   text-transform: uppercase;
   font-weight: 700;
@@ -41,12 +41,11 @@
 
   &::after {
     content: "";
-    width: 60vw;
+    width: 100%;
     height: 1px;
+    display: block;
     background-color: #63d1bb;
-    position: absolute;
-    top: 8px;
-    left: 60px;
+    margin-left: 20px;
   }
 
   @media (min-width: $tablet-width) {
