@@ -51,14 +51,14 @@
   }
 }
 
-  .feedback-list__button {
-    width: 100%;
+.feedback-list__button {
+  width: 100%;
 
-    @media (min-width: $tablet-width) {
-      width: auto;
-      padding: 15px 35px;
-      margin-bottom: 30px;
-      font-size: 17px;
-      grid-area: 1/2/2/3;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 15px 35px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    grid-area: 1/2/2/3;
   }
 }
