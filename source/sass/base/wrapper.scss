@@ -1,11 +1,16 @@
 .wrapper {
   padding-right: 30px;
   padding-left: 30px;
-}
 
-@media (min-width: $tablet-width) {
-  .wrapper {
+  @media (min-width: $tablet-width) {
     padding-right: 50px;
     padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }

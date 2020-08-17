@@ -41,7 +41,6 @@
   color: $extra-dark;
   font-size: 13px;
   line-height: 30px;
-  border-bottom: 1px solid $grey-border;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -54,6 +53,7 @@
   line-height: 24px;
   font-weight: 700;
 
+
   @media (min-width: $tablet-width) {
     font-size: 17px;
   }
@@ -64,9 +64,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
+    display: flex;
+    flex-direction: column;
     min-width: 55%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
   }
 }
 
@@ -75,4 +79,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
+  border-top: 1px solid $grey-border;
+  margin-top: auto;
 }
