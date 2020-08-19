@@ -12,3 +12,14 @@
 .social__item {
   margin: auto 0;
 }
+
+.social__link {
+  &:hover > svg,
+  &:focus > svg{
+    fill: $blue-bg-hover;
+  }
+
+  &:active > svg{
+    opacity: 0.3;
+  }
+}

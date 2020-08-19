@@ -3,6 +3,14 @@
   padding: 0;
   margin-bottom: 60px;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0px 6px 10px rgba($basic-black, 0.1);
+  }
+  &:active {
+    box-shadow: 0px 3px 5px rgba($basic-black, 0.1);
+  }
+
 
   @media (min-width: $tablet-width) {
     display: flex;

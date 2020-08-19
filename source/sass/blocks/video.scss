@@ -8,6 +8,10 @@
 
 .video__img {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .video__button {
@@ -17,7 +21,17 @@
   left: 50%;
   margin-top: -38px;
   margin-left: -50px;
-  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active{
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .video__text {

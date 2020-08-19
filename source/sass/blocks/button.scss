@@ -5,9 +5,19 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  padding: 12px 10px;
+  padding: 14px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $extra-dark;
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 }
