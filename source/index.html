@@ -7,20 +7,10 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="body">
-    <div class="hidden">
-      <svg version="1.1" id="menu-open" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
-        <rect width="19.958" height="2"/>
-        <rect y="6" width="19.958" height="2"/>
-        <rect y="12" width="19.958" height="2"/>
-      </svg>
-      <svg version="1.1" id="menu-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
-        <polygon points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
-      </svg>
-    </div>
     <header class="header wrapper">
       <nav class="navigation">
         <a class="header__logo">
-          <!-- TODO здесь размеры не прописывать?  -->
+          <!-- TODO здесь размеры не прописывать? и вообще я не поняла как прописывать размеры в <picture>, если они меняются в зависимости от ширины экрана  -->
           <picture>
             <source media="(min-width:1150px)" srcset="./img/logo-desktop.svg">
             <source media="(min-width:768px)" srcset="./img/logo-tablet.svg">
@@ -28,11 +18,12 @@
           </picture>
         </a>
         <button class="navigation__toggle" type="button">
-          <svg width="20" height="20">
-            <use xlink:href="#menu-open"></use>
+          <svg class="navigation__icon" width="20" height="20" aria-hidden="true">
+            <use class="navigation__icon-cross" href="./img/icon-menu-sprite.svg#cross"></use>
+            <use class="navigation__icon-menu" href="./img/icon-menu-sprite.svg#menu"></use>
           </svg>
         </button>
-        <ul class="navigation__list menu menu--site">
+        <ul class="navigation__list menu menu--site hidden">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -46,7 +37,7 @@
             <a class="menu__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <ul class="navigation__list menu menu--user">
+        <ul class="navigation__list menu menu--user hidden">
           <li class="menu__item">
             <a class="menu__link" href="#">
               <svg class="menu__icon menu__icon--search" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -217,5 +208,27 @@
         </div>
       </div>
     </footer>
+    <div class="modal hidden">
+      <form class="modal__inner" method="POST" action="https://echo.htmlacademy.ru">
+        <h3 class="modal__title">Добавить в&nbsp;корзину</h3>
+        <p class="modal__note">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__list-item">
+            <input class="modal__input visually-hidden" id="size-s" type="radio" value="s" name="size" checked>
+            <label class="modal__size" for="size-s">s</label>
+          </li>
+          <li class="modal__list-item">
+            <input class="modal__input visually-hidden" id="size-m" type="radio" value="m" name="size">
+            <label class="modal__size" for="size-m">m</label>
+          </li>
+          <li class="modal__list-item">
+            <input class="modal__input visually-hidden" id="size-l" type="radio" value="l" name="size">
+            <label class="modal__size" for="size-l">l</label>
+            </li>
+        </ul>
+        <button class="modal_button" type="submit">Добавить</button>
+      </form>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

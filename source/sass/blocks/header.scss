@@ -5,7 +5,7 @@
 }
 
 .header.wrapper {
-  @media(max-width: $mobile-max-width) {
+  @media (max-width: $mobile-max-width) {
     display: contents;
   }
 }

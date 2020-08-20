@@ -12,4 +12,10 @@
     color: $extra-dark;
     opacity: 0.3;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $blue-border-link;
+  }
 }

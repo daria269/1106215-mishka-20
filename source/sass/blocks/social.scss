@@ -15,11 +15,11 @@
 
 .social__link {
   &:hover > svg,
-  &:focus > svg{
+  &:focus > svg {
     fill: $blue-bg-hover;
   }
 
-  &:active > svg{
+  &:active > svg {
     opacity: 0.3;
   }
 }

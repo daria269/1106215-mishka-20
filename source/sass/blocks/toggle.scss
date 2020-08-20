@@ -24,11 +24,11 @@
   }
 
   &:hover > svg,
-  &:focus > svg{
-    opacity: 0.6
+  &:focus > svg {
+    opacity: 0.6;
   }
 
-  &:active > svg{
+  &:active > svg {
     opacity: 0.3;
   }
 }
