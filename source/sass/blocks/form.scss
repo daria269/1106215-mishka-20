@@ -5,13 +5,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 120px 1fr;
     column-gap: 20px;
     padding: 50px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 120px 1fr;
   }
 }
 
@@ -19,6 +19,12 @@
   @media (min-width: $desktop-width) {
     padding-right: 200px;
     padding-left: 100px;
+  }
+}
+
+.form__element.wrapper.color {
+  @media (min-width: $desktop-width) {
+    padding-right: 100px;
   }
 }
 
