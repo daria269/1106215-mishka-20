@@ -12,16 +12,25 @@
     box-shadow: 0 3px 5px rgba($basic-black, 0.1);
   }
 
+  @media (max-width: $mobile-max-width) {
+    max-width: 520px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    max-width: 668px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     height: 455px;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    max-width: 100%;
   }
 }
 

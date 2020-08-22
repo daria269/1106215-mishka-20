@@ -63,6 +63,8 @@
 
 .feedback-list__button {
   width: 100%;
+  margin: 0 auto;
+  max-width: 520px;
 
   @media (min-width: $tablet-width) {
     width: auto;

@@ -1,4 +1,8 @@
 .product {
+  @media (max-width: $mobile-max-width) {
+    max-width: 520px;
+    margin: 0 auto;
+  }
   cursor: pointer;
   border: 1px solid $grey-border;
 

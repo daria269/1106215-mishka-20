@@ -158,6 +158,9 @@
 }
 
 .contacts__button {
+  max-width: 520px;
+  margin: 0 auto;
+
   @media (min-width: $desktop-width) {
     grid-row-start: 3;
     grid-column-start: 2;
