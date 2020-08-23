@@ -98,7 +98,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  transition: color 0.2s;
+  transition: color $transition-duration;
 
   &:hover,
   &:focus {

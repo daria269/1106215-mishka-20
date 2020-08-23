@@ -21,7 +21,7 @@
   fill: $light-blue;
 
   & svg {
-    transition: fill 0.2s;
+    transition: fill $transition-duration;
   }
 
   &:hover > svg,

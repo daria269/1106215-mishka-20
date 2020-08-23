@@ -1,5 +1,5 @@
 .product {
-  transition: box-shadow 0.2s;
+  transition: box-shadow $transition-duration;
 
   @media (max-width: $mobile-max-width) {
     max-width: 520px;
@@ -110,7 +110,7 @@
 
 .product__button > svg {
   opacity: 0.2;
-  transition: fill 0.2s, opacity 0.2s;
+  transition: fill $transition-duration, opacity $transition-duration;
 }
 
 .product__button {

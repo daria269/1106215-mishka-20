@@ -21,7 +21,7 @@
   left: 50%;
   margin-top: -38px;
   margin-left: -50px;
-  transition: 0.2s;
+  transition: $transition-duration;
 
   &:hover,
   &:focus {

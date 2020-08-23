@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  transition: color 0.2s, background-color 0.2s, border 0.2s;
+  transition: color $transition-duration, background-color $transition-duration, border $transition-duration;
 
   &:hover,
   &:focus {
