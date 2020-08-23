@@ -8,12 +8,15 @@
   border-bottom: 1px solid $footer-border;
 }
 
-
 .social__item {
   margin: auto 0;
 }
 
 .social__link {
+  & svg {
+    transition: fill 0.2s;
+  }
+
   &:hover > svg,
   &:focus > svg {
     fill: $blue-bg-hover;

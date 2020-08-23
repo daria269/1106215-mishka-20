@@ -32,3 +32,7 @@
     opacity: 0.3;
   }
 }
+
+.toggle__item svg {
+  transition: opacity 0.2s;
+}

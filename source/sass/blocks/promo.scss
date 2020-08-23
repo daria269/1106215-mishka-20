@@ -66,6 +66,7 @@
   line-height: 24px;
   padding: 25px 30px 30px;
   position: relative;
+  transition: background-color 0.2s;
 
   &::after {
     content: "";
@@ -79,6 +80,7 @@
     transform: translateY(-50%);
     right: 28px;
     opacity: 0.5;
+    transition: opacity 0.2s;
   }
 
   &--interior::after {
@@ -126,8 +128,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .promo__container {
+.promo__container {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;

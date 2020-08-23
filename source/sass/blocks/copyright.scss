@@ -20,6 +20,9 @@
 .copyright__link {
   fill: $light-blue;
 
+  & svg {
+    transition: fill 0.2s;
+  }
 
   &:hover > svg,
   &:focus > svg {

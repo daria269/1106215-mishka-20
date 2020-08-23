@@ -88,6 +88,7 @@
   border-radius: 50%;
   margin-right: 20px;
   background-color: transparent;
+  transition: border 0.2s;
 
   @media (min-width: $tablet-width) {
     width: 54px;
@@ -136,6 +137,7 @@
   border: 2px solid $extra-dark;
   margin-right: 20px;
   background-color: transparent;
+  transition: border 0.2s;
 
   @media (min-width: $tablet-width) {
     width: 54px;
