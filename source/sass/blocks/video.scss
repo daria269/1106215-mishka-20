@@ -2,7 +2,16 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    order: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    transform: translateX(-100%);
+    width: 680px;
   }
 }
 
@@ -19,17 +28,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -38px;
-  margin-left: -50px;
-  transition: $transition-duration;
+  transform: translate(-50%, -50%);
+  transition: transform $transition-duration;
 
   &:hover,
   &:focus {
-    transform: scale(1.2);
+    transform: translate(-50%, -50%) scale(1.2);
   }
 
   &:active {
-    transform: scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
   }
 }
@@ -50,7 +58,7 @@
 
   @media (min-width: $desktop-width) {
     width: 360px;
-    padding: 0 60px 0 70px;
+    padding: 0 56px 0 80px;
     margin-bottom: 50px;
   }
 }

@@ -26,12 +26,15 @@
 }
 
 .footer__logo-img {
-  &:hover > svg,
-  &:focus > svg {
-    fill: $blue-bg-hover;
+  color: $basic-black;
+  transition: color $transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $blue-bg-hover;
   }
 
-  &:active > svg {
+  &:active {
     opacity: 0.3;
   }
 }

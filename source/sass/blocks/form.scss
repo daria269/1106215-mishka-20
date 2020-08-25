@@ -55,17 +55,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
+    align-items: flex-start;
 
     &::after {
       display: none;
     }
   }
-}
-
-.form__legend--tel,
-.form__legend--email,
-.form__legend--additional {
-  margin: 0;
 }
 
 .form__option {

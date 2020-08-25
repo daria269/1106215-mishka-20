@@ -6,6 +6,7 @@
   background-position-y: -20px;
   position: relative;
   background-size: 575px 400px;
+  border-top: 1px solid $grey-border;
 
 
   @media (min-resolution: 2dppx) {
@@ -15,8 +16,8 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-tablet@1x.jpg");
     margin-top: -75px;
-    border-top: 1px solid $grey-border;
     background-size: cover;
+    background-position-y: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -66,7 +67,13 @@
   line-height: 24px;
   padding: 25px 30px 30px;
   position: relative;
-  transition: background-color $transition-duration;
+  transition: transform $transition-duration, background-color $transition-duration;
+
+  // TODO не смогла придумать как еще эту штуку увеличить
+  &:hover,
+  &:focus {
+    transform: scaleY(1.04) translateY(-2%);
+  }
 
   &::after {
     content: "";

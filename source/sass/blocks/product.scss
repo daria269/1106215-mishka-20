@@ -1,15 +1,13 @@
 .product {
-  transition: box-shadow $transition-duration;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media (max-width: $mobile-max-width) {
     max-width: 520px;
     margin: 0 auto;
-  }
-  cursor: pointer;
-  border: 1px solid $grey-border;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
@@ -22,12 +20,12 @@
     margin-bottom: 30px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover .product__inner,
+  &:focus .product__inner {
     box-shadow: 0 6px 10px rgba($basic-black, 0.1);
   }
 
-  &:active {
+  &:active .product__inner {
     box-shadow: 0 3px 5px rgba($basic-black, 0.1);
   }
 }
@@ -85,6 +83,8 @@
 }
 
 .product__inner {
+  border: 1px solid $grey-border;
+  transition: box-shadow $transition-duration;
   padding: 30px 35px;
   position: relative;
 
@@ -108,19 +108,17 @@
   margin-top: auto;
 }
 
-.product__button > svg {
-  opacity: 0.2;
-  transition: fill $transition-duration, opacity $transition-duration;
-}
-
 .product__button {
-  &:hover > svg,
-  &:focus > svg {
-    fill: $light-blue;
+  opacity: 0.2;
+  transition: color $transition-duration, opacity $transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $light-blue;
     opacity: 1;
   }
 
-  &:active > svg {
+  &:active {
     opacity: 0.3;
   }
 }

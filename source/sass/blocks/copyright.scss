@@ -18,18 +18,15 @@
 }
 
 .copyright__link {
-  fill: $light-blue;
+  color: $light-blue;
+  transition: color $transition-duration;
 
-  & svg {
-    transition: fill $transition-duration;
+  &:hover,
+  &:focus {
+    color: $blue-bg-hover;
   }
 
-  &:hover > svg,
-  &:focus > svg {
-    fill: $blue-bg-hover;
-  }
-
-  &:active > svg {
+  &:active {
     opacity: 0.3;
   }
 }

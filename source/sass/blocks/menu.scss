@@ -9,11 +9,9 @@
   }
 }
 
-//TODO чем плох border-bottom? зачем менять на  border-top?
-
 .menu__item {
   padding: 30px 75px;
-  border-bottom: 1px solid $grey-border;
+  border-top: 1px solid $grey-border;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -111,7 +109,7 @@
 
   &:hover > .menu__icon,
   &:focus > .menu__icon {
-    fill: $light-blue;
+    color: $light-blue;
     opacity: 1;
   }
 
@@ -124,7 +122,7 @@
   position: absolute;
   transform: translateX(-50%);
   left: -30px;
-  fill: $basic-black;
+  color: $basic-black;
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {

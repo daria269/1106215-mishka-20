@@ -15,6 +15,7 @@
 
 .option__item {
   display: flex;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 25px;
@@ -51,14 +52,31 @@
   }
 }
 
+.option__item-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 15px;
+  opacity: 0.2;
+  transition: color $transition-duration, opacity $transition-duration;
+}
+
+.input:hover + .option__item-icon,
+.input:focus + .option__item-icon {
+  color: $blue-border-link;
+  opacity: 1;
+}
+
 .option__input {
   border: none;
   border-bottom: 2px solid $basic-black;
   padding: 18px 0;
+  padding-right: 40px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 18px;
+    padding-left: 18px;
   }
 }
 
@@ -119,9 +137,9 @@
 }
 
 .option__name:hover > .option__radio-icon,
-.option__name:focus > .option__radio-icon,
+.option__radio:focus + .option__radio-icon,
 .option__name:hover > .option__checkbox-icon,
-.option__name:focus > .option__checkbox-icon {
+.option__checkbox:focus + .option__checkbox-icon {
   border: 2px solid $blue-border-link;
 }
 
@@ -166,4 +184,10 @@
 
 .option__checkbox:checked + .option__checkbox-icon::after {
   opacity: 1;
+}
+
+.option__checkbox:disabled + .option__checkbox-icon,
+.option__radio:disabled + .option__radio-icon {
+  cursor: initial;
+  opacity: 0.1;
 }
