@@ -1,0 +1,114 @@
+.modal {
+  background-color: rgba($basic-white, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.modal__inner {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+  border: 1px solid $modal-border;
+  box-shadow: 0 5px 10px rgba($modal-shadow, 0.25);
+  background-color: $basic-white;
+
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-right: 105px;
+    padding-left: 105px;
+    max-width: 566px;
+  }
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.modal__note {
+  color: $extra-dark;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: $extra-dark;
+}
+
+//TODO радио с клавиатуры переключаются, но надо сначала мышкой помочь и кликнуть на парвый инпут
+
+.modal__size {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 14px;
+  min-width: 82px;
+  text-align: center;
+  cursor: pointer;
+
+  border: 2px solid rgba($extra-dark, 0.1);
+
+  &:hover {
+    border: 2px solid rgba($extra-dark, 0.3);
+  }
+
+  &:active {
+    border: 2px solid $blue-border-link;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 112px;
+  }
+}
+
+.modal__input:checked + .modal__size {
+  border: 2px solid $blue-border-link;
+}
+
+.modal_button {
+  @include button-reset;
+  width: 100%;
+  background-color: $light-blue;
+  color: $basic-white;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 16px;
+  transition: background-color $transition-duration, color $transition-duration;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-bg-hover;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+}

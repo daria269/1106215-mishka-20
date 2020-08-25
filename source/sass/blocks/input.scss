@@ -6,10 +6,17 @@
   color: $extra-dark;
   outline: none;
   background-color: transparent;
+  transition: border $transition-duration;
 
   &::placeholder {
     font: inherit;
     color: $extra-dark;
     opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $blue-border-link;
   }
 }

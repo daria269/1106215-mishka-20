@@ -1,8 +1,13 @@
 .product {
-  border: 1px solid $grey-border;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    max-width: 520px;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -13,6 +18,15 @@
     flex-direction: column;
     width: 30%;
     margin-bottom: 30px;
+  }
+
+  &:hover .product__inner,
+  &:focus .product__inner {
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+  }
+
+  &:active .product__inner {
+    box-shadow: 0 3px 5px rgba($basic-black, 0.1);
   }
 }
 
@@ -32,6 +46,15 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &:hover,
+  & a:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -60,6 +83,8 @@
 }
 
 .product__inner {
+  border: 1px solid $grey-border;
+  transition: box-shadow $transition-duration;
   padding: 30px 35px;
   position: relative;
 
@@ -81,4 +106,19 @@
   padding-top: 30px;
   border-top: 1px solid $grey-border;
   margin-top: auto;
+}
+
+.product__button {
+  opacity: 0.2;
+  transition: color $transition-duration, opacity $transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $light-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

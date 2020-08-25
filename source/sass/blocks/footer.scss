@@ -24,3 +24,17 @@
     padding-bottom: 55px;
   }
 }
+
+.footer__logo-img {
+  color: $basic-black;
+  transition: color $transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $blue-bg-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

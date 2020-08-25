@@ -16,3 +16,23 @@
     display: none;
   }
 }
+
+.navigation__icon-menu,
+.navigation__toggle--open .navigation__icon-cross {
+  display: block;
+}
+
+.navigation__icon-cross,
+.navigation__toggle--open .navigation__icon-menu {
+  display: none;
+}
+
+.navigation__icon {
+  fill: $basic-black;
+  transition: fill $transition-duration;
+}
+
+.navigation__toggle:hover .navigation__icon,
+.navigation__toggle:focus .navigation__icon {
+  fill: $blue-bg-hover;
+}

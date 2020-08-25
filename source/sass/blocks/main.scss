@@ -18,7 +18,7 @@
     font-size: 43px;
     line-height: 50px;
     border-top: 1px solid $grey-border;
-    margin-top: -64px;
+    margin-top: -75px;
 
     &::after {
       content: "";
@@ -29,9 +29,5 @@
       height: 34px;
       background-image: url("../img/bg-zigzag-fill.svg");
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: -86px;
   }
 }

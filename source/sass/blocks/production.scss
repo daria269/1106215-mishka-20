@@ -3,16 +3,40 @@
   padding: 0;
   margin-bottom: 60px;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($basic-black, 0.1);
+  }
+
+  @media (max-width: $mobile-max-width) {
+    max-width: 520px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    max-width: 668px;
+    margin-right: auto;
+    margin-left: auto;
+
+    position: relative;
+    margin-top: 454px;
   }
 
+  // TODO почему-то не получается поставить в стык, не пойму в чем дело
+
   @media (min-width: $desktop-width) {
-    height: 455px;
-    flex-wrap: wrap;
+    height: 452px;
+    margin-top: 0;
+    margin-right: 0;
     margin-bottom: 100px;
+    width: max-content;
   }
 }
 
@@ -39,8 +63,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 70px;
-    padding-right: 60px;
+    padding-left: 80px;
+    padding-right: 56px;
     flex-direction: column;
     align-items: flex-start;
 
@@ -60,7 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 70px;
-    margin-right: 60px;
+    margin-left: 80px;
+    margin-right: 56px;
   }
 }

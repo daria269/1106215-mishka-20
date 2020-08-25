@@ -16,3 +16,17 @@
   margin: auto 0;
   padding-right: 30px;
 }
+
+.copyright__link {
+  color: $light-blue;
+  transition: color $transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $blue-bg-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

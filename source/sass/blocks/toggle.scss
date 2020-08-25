@@ -22,4 +22,17 @@
     padding-right: 0;
     padding-left: 40px;
   }
+
+  &:hover > svg,
+  &:focus > svg {
+    opacity: 0.6;
+  }
+
+  &:active > svg {
+    opacity: 0.3;
+  }
+}
+
+.toggle__item svg {
+  transition: opacity $transition-duration;
 }
