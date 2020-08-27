@@ -9,7 +9,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -23,6 +22,10 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
 }
 
@@ -43,12 +46,12 @@
   @media (min-width: $tablet-width) {
     width: auto;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 120px 1fr;
     column-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 120px 1fr;
   }
 }
 

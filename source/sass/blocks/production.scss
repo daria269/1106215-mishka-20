@@ -24,19 +24,35 @@
     max-width: 668px;
     margin-right: auto;
     margin-left: auto;
-
-    position: relative;
-    margin-top: 454px;
   }
 
-  // TODO почему-то не получается поставить в стык, не пойму в чем дело
+  @media (min-width: $desktop-width) {
+    height: 456px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+
+.production__text {
+  color: $extra-dark;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 40px 40px;
+  }
 
   @media (min-width: $desktop-width) {
-    height: 452px;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 100px;
-    width: max-content;
+    width: 360px;
+    padding: 0 56px 0 80px;
+    margin-bottom: 50px;
   }
 }
 

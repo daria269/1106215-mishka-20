@@ -2,16 +2,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    transform: translateX(-100%);
-    width: 680px;
+    order: -1;
   }
 }
 
@@ -42,23 +33,6 @@
   }
 }
 
-.video__text {
-  color: $extra-dark;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  padding: 30px;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 15px;
-    line-height: 30px;
-    padding: 0 40px 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 360px;
-    padding: 0 56px 0 80px;
-    margin-bottom: 50px;
-  }
+.video__container {
+  display: block;
 }

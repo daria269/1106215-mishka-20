@@ -10,6 +10,10 @@
     display: grid;
     grid-template-columns: auto 180px;
     column-gap: 30px;
+
+    @include retina-dppx {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 }
 
