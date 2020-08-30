@@ -15,9 +15,7 @@
 }
 
 @mixin retina-dppx {
-  @media
-  (min-resolution: 2dppx),
-  (min-resolution: 144dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
     @content;
   }
 }
