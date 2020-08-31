@@ -31,6 +31,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    flex-basis: 45%;
   }
 
   @media (min-width: $desktop-width) {

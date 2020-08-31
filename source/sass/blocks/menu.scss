@@ -28,8 +28,7 @@
 .menu--user {
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 50%;
+    flex-basis: 55%;
     justify-content: flex-end;
 
     & .menu__item {
@@ -43,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 40%;
+    flex-wrap: wrap;
     justify-content: flex-end;
   }
 }

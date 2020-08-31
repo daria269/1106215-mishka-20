@@ -1,5 +1,5 @@
 .promo {
-  background-color: $light-grey-bg;
+  background-color: $promo-bg;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-tablet@1x.jpg");
     margin-top: -75px;
-    background-size: cover;
+    background-size: 1150px auto;
     background-position-y: center;
 
     @include retina-dppx {
@@ -86,7 +86,7 @@
     transform: translateY(-50%);
     right: 28px;
     opacity: 0.5;
-    transition: opacity $transition-duration, top $transition-duration;
+    transition: opacity $transition-duration, transform $transition-duration;
   }
 
   &--interior::after {
@@ -107,7 +107,7 @@
   &:hover::after,
   &:focus::after {
     opacity: 0.7;
-    top: calc(50% - 5px);
+    transform: translateY(calc(-50% - 5px));
   }
 
   &:active::after {
@@ -155,4 +155,9 @@
       background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
+}
+
+.promo__link-text {
+  display: block;
+  max-width: 150px;
 }

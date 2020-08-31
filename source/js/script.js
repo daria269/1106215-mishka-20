@@ -41,12 +41,14 @@ if (buyBtnPromo) {
 }
 
 // Закрытие модалки "добавить в корзину"
+if (modalCart) {
+  modalCart.addEventListener('click', (e) => {
+    const modalInner = e.target.closest('.modal__inner');
+    if (modalInner) return;
+    modalCart.classList.add('hidden');
+  })
+}
 
-modalCart.addEventListener('click', (e) => {
-  let modalInner = e.target.closest('.modal__inner');
-  if (modalInner) return;
-  modalCart.classList.add('hidden');
-})
 
 // Закрытие модалки по esc
 
