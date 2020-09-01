@@ -1,8 +1,11 @@
 .video {
   position: relative;
 
+  // из-за минусового марджина не получается посредине поставить видео
+
   @media (min-width: $tablet-width) {
     order: -1;
+    max-width: 682px;
   }
 }
 
