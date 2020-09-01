@@ -17,6 +17,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 30%;
+    margin-right: 50px;
     margin-bottom: 30px;
   }
 
@@ -27,6 +28,12 @@
 
   &:active .product__inner {
     box-shadow: 0 3px 5px rgba($basic-black, 0.1);
+  }
+}
+
+.product:nth-of-type(3n + 3) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -109,6 +116,7 @@
 }
 
 .product__button {
+  color: inherit;
   opacity: 0.2;
   transition: color $transition-duration, opacity $transition-duration;
 

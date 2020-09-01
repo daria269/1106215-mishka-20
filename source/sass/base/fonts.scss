@@ -3,7 +3,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/source/fonts/opensans.woff2"), url("/source/fonts/opensans.woff");
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
 }
 
 @font-face {
@@ -11,5 +11,5 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/source/fonts/opensansbold.woff2"), url("/source/fonts/opensansbold.woff");
+  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
 }

@@ -13,3 +13,9 @@
   font-family: inherit;
   cursor: pointer;
 }
+
+@mixin retina-dppx {
+  @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
+    @content;
+  }
+}
