@@ -38,6 +38,9 @@
 }
 
 .product__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   margin: 0 auto;
 }
 
@@ -128,5 +131,18 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.product__link {
+  display: block;
+  max-height: 195px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 462px;
   }
 }

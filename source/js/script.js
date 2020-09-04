@@ -16,7 +16,7 @@ toggleMenu.addEventListener('click', (e) => {
   toggleMenu.classList.toggle('navigation__toggle--open');
 })
 
-// Вызов модалки "добавить в корзину" в каталоге
+// Вызов модалки 'добавить в корзину' в каталоге
 
 buyButtons.forEach((buyBtn) => {
   buyBtn.addEventListener('click', (e) => {
@@ -28,7 +28,7 @@ buyButtons.forEach((buyBtn) => {
   });
 })
 
-// Вызов модалки "добавить в корзину" на главной
+// Вызов модалки 'добавить в корзину' на главной
 
 if (buyBtnPromo) {
   buyBtnPromo.addEventListener('click', (e) => {
@@ -40,7 +40,7 @@ if (buyBtnPromo) {
   });
 }
 
-// Закрытие модалки "добавить в корзину"
+// Закрытие модалки 'добавить в корзину'
 if (modalCart) {
   modalCart.addEventListener('click', (e) => {
     const modalInner = e.target.closest('.modal__inner');
