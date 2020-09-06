@@ -18,11 +18,11 @@
 }
 
 .navigation__icon-menu,
-.navigation__toggle--open .navigation__icon-cross {
+.navigation__toggle--open .navigation__icon-close {
   display: block;
 }
 
-.navigation__icon-cross,
+.navigation__icon-close,
 .navigation__toggle--open .navigation__icon-menu {
   display: none;
 }
