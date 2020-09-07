@@ -1,3 +1,5 @@
+'use strict'
+
 const buyButtons = document.querySelectorAll('.product__button');
 const modalCart = document.querySelector('.modal');
 const buyBtnPromo =  document.querySelector('.popular-item__button');
