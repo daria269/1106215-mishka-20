@@ -16,6 +16,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,11 +78,16 @@
 
     & .menu__item {
       padding-top: 30px;
-    }
 
-    & .menu__item:nth-child(n+3) {
-      display: block;
-      padding-top: 20px;
+      &:nth-child(n+3) {
+        display: block;
+        padding-top: 20px;
+      }
+
+      &:nth-child(2) {
+        border-left: 1px solid $grey-border;
+        padding-left: 30px;
+      }
     }
   }
 }
