@@ -13,6 +13,7 @@ const svgstore = require('gulp-svgstore');
 const del = require('del');
 const terser = require('gulp-terser');
 const htmlValidator = require('gulp-w3c-html-validator');
+const htmlmin = require('gulp-htmlmin');
 
 
 // Styles
@@ -39,6 +40,9 @@ exports.styles = styles;
 const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlValidator())
+  .pipe(htmlmin({
+    collapseWhitespace: true
+  }))
   .pipe(gulp.dest('build/'))
 }
 exports.html = html;
@@ -68,7 +72,6 @@ const server = (done) => {
   done();
 }
 exports.server = server;
-
 
 // Images-min
 
@@ -100,7 +103,6 @@ const sprite = () => {
 }
 exports.sprite = sprite;
 
-
 //Build
 
 const copy = () => {
@@ -113,7 +115,6 @@ const copy = () => {
   .pipe(gulp.dest('build'));
 };
 exports.copy = copy;
-
 
 const clean = () => {
   return del('build');
