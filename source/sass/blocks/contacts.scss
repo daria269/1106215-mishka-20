@@ -2,7 +2,9 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
-  padding: 30px 0;
+  padding: 0;
+  padding-top: 44px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
@@ -26,7 +28,7 @@
   font-size: 18px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -98,7 +100,7 @@
   display: grid;
   font-size: 15px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   row-gap: 30px;
 
   @media (min-width: $tablet-width) {
@@ -124,7 +126,7 @@
 
 .contacts__item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 76px 1fr;
   margin: 0;
 
   @media (min-width: $desktop-width) {

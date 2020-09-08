@@ -2,7 +2,7 @@
   cursor: pointer;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -48,7 +48,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin: 0 0 5px 0;
+  margin: 0;
+  margin-bottom: 6px;
 
   & a {
     color: inherit;
@@ -69,7 +70,8 @@
 }
 
 .product__description {
-  padding: 0 0 20px;
+  padding: 0;
+  padding-bottom: 18px;
   margin: 0;
   color: $extra-dark;
   font-size: 13px;
@@ -95,7 +97,9 @@
 .product__inner {
   border: 1px solid $grey-border;
   transition: box-shadow $transition-duration;
-  padding: 30px 35px;
+  padding: 27px;
+  padding-top: 26px;
+  padding-bottom: 28px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -113,7 +117,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 22px;
   border-top: 1px solid $grey-border;
   margin-top: auto;
 }

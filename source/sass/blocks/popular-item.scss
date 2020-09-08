@@ -1,6 +1,8 @@
 .popular-item {
   color: $extra-dark;
-  padding: 30px 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -27,7 +29,7 @@
   line-height: 30px;
   display: grid;
   row-gap: 5px;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
   position: relative;
 
   &::after {
@@ -81,7 +83,7 @@
 .popular-item__description {
   font-size: 15px;
   line-height: 24px;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -120,7 +122,7 @@
 
 .popular-item__img {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 2;
