@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-tablet@1x.jpg");
-    margin-top: -75px;
+    margin-top: -71px;
     background-size: 1150px auto;
     background-position-y: center;
 
@@ -44,8 +44,8 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    min-height: 480px;
-    padding: 130px 50px 0;
+    min-height: 626px;
+    padding: 154px 50px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +101,7 @@
     width: 50%;
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 35px 35px;
+    padding: 25px 35px 32px;
   }
 
   &:hover::after,

@@ -12,6 +12,14 @@
   }
 }
 
+.color .option__item {
+  @media (min-width: $tablet-width) {
+    &:nth-child(odd) {
+      margin-right: 59px;
+    }
+  }
+}
+
 .option__item {
   display: flex;
   position: relative;
@@ -22,6 +30,11 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +44,7 @@
 
 .color .option__item {
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 40%;
     margin-bottom: 25px;
   }
 
@@ -46,7 +59,7 @@
   @media (min-width: $tablet-width) {
     width: auto;
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 147px 1fr;
     column-gap: 20px;
   }
 
@@ -55,8 +68,18 @@
   }
 }
 
+.name .option__item--column {
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto 1fr;
+  }
+}
+
 .option__item.option__item--tel {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .option__item--tel .form__legend {

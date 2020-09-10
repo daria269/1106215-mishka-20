@@ -11,6 +11,10 @@
   grid-template-columns: 38% 52%;
   padding: 10px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 33% 52%;
+  }
 }
 
 .table__value {

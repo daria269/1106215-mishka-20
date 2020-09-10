@@ -7,8 +7,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 75px;
     background-size: auto 17px;
   }
 
@@ -33,7 +32,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
   }
 }
 
@@ -72,8 +71,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
-    margin-right: 35px;
+    margin-bottom: 57px;
+    margin-right: 39px;
 
     &--price {
       order: 3;

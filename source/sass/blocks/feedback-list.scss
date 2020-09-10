@@ -7,7 +7,7 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     padding-top: 80px;
-    padding-bottom: 115px;
+    padding-bottom: 88px;
 
     display: grid;
     grid-template-columns: auto 180px;
@@ -44,7 +44,7 @@
     grid-column-end: 2;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -75,7 +75,8 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 15px 35px;
+    padding: 13px 38px;
+    margin-right: 0;
     margin-bottom: 40px;
     font-size: 17px;
 

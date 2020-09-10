@@ -36,7 +36,7 @@
     & .menu__item {
       border-bottom: none;
       border-left: 1px solid $grey-border;
-      height: 84px;
+      height: 88px;
       padding-right: 0;
       padding-left: 0;
     }
@@ -66,8 +66,11 @@
     & .menu__item {
       border-bottom: none;
       padding-top: 20px;
-      padding-right: 30px;
       padding-left: 0;
+    }
+
+    & .menu__item:first-child {
+      padding-right: 37px;
     }
   }
 
@@ -134,8 +137,8 @@
 
   @media (min-width: $tablet-width) {
     position: initial;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 32px;
+    margin-left: 32px;
     transform: none;
   }
 }

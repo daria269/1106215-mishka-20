@@ -1,5 +1,9 @@
 .type {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .type .form__legend {

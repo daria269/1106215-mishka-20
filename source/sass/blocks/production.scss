@@ -23,6 +23,7 @@
     flex-direction: column;
     max-width: 668px;
     margin-right: auto;
+    margin-bottom: 64px;
     margin-left: auto;
 
     &::after {
@@ -76,7 +77,10 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
-    padding: 0 40px 40px;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +111,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 40px 40px 30px;
+    padding-top: 36px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {

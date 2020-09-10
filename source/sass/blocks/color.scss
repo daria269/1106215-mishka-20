@@ -1,9 +1,19 @@
 .color {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 51px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .color .form__legend {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
 }
 
 .color .option__item:not(:last-child) {

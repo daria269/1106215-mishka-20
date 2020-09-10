@@ -1,5 +1,10 @@
 .name {
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 47px;
+    margin-bottom: 0;
+  }
 }
 
 .name .form__legend {
@@ -8,4 +13,8 @@
 
 .name .option__item {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }

@@ -9,12 +9,17 @@
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    padding: 0;
   }
 }
 
 .copyright__text {
   margin: auto 0;
   padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+  }
 }
 
 .copyright__link {

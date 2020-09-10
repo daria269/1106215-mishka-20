@@ -4,8 +4,8 @@
   & .wrapper {
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-column-gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 0px;
+      grid-template-columns: auto 1fr auto;
     }
   }
 }
@@ -20,8 +20,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 53px;
+    padding-bottom: 53px;
   }
 }
 
