@@ -25,7 +25,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 30%;
-    margin-right: 50px;
+    margin-right: 51px;
     margin-bottom: 30px;
   }
 
@@ -120,6 +120,8 @@
 
   @media (min-width: $desktop-width) {
     height: 100%;
+    padding-top: 30px;
+    padding-left: 26px;
   }
 }
 
@@ -130,6 +132,10 @@
   padding-top: 22px;
   border-top: 1px solid $grey-border;
   margin-top: auto;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .product__button {

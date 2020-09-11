@@ -30,4 +30,11 @@
       background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    padding-top: 32px;
+    min-height: 249px;
+    margin-top: -76px;
+  }
 }
