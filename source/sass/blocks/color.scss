@@ -6,6 +6,11 @@
     padding-bottom: 20px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    padding-bottom: 29px;
+  }
 }
 
 .color .form__legend {
@@ -18,4 +23,8 @@
 
 .color .option__item:not(:last-child) {
   margin-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 21px;
+  }
 }
