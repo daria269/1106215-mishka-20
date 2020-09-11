@@ -1,21 +1,24 @@
 .popular-item {
   color: $extra-dark;
-  padding: 30px 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 53px;
     padding-bottom: 50px;
 
     display: grid;
-    grid-template-columns: 20% 20% auto auto;
-    grid-template-rows: 1fr auto 1fr min-content;
+    grid-template-columns: 18% 20% auto auto;
+    grid-template-rows: auto auto 1fr min-content;
     column-gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 175px 30% auto;
+    grid-template-columns: 175px 28% auto;
     margin-left: auto;
     padding-top: 70px;
+    padding-bottom: 76px;
     column-gap: 0;
   }
 }
@@ -27,7 +30,7 @@
   line-height: 30px;
   display: grid;
   row-gap: 5px;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
   position: relative;
 
   &::after {
@@ -41,7 +44,8 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    margin: 0 0 35px 0;
+    margin: 0;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,12 +85,13 @@
 .popular-item__description {
   font-size: 15px;
   line-height: 24px;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
+    margin-top: -12px;
 
     grid-row-start: 2;
     grid-column-start: 1;
@@ -99,6 +104,8 @@
     grid-column-start: 2;
     grid-row-end: 3;
     grid-column-end: 3;
+
+    margin-bottom: 52px;
   }
 }
 
@@ -120,7 +127,7 @@
 
 .popular-item__img {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 2;
@@ -150,7 +157,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     grid-row-start: 4;
     grid-column-start: 1;

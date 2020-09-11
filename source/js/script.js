@@ -8,8 +8,13 @@ const toggleMenu = document.querySelector('.navigation__toggle');
 const menu = document.querySelectorAll('.menu');
 const sizeBtns = document.querySelectorAll('.modal__input');
 
-
 // Открытие/закрытие главного меню
+menu.forEach((menuList) => {
+  menuList.classList.add('hidden');
+  toggleMenu.classList.remove('hidden');
+})
+
+
 
 toggleMenu.addEventListener('click', (e) => {
   menu.forEach((menuList) => {

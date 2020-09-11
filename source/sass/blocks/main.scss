@@ -3,7 +3,7 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  min-height: 180px;
+  min-height: 176px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,11 +14,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
-    min-height: 225px;
+    min-height: 222px;
     font-size: 43px;
     line-height: 50px;
     border-top: 1px solid $grey-border;
-    margin-top: -75px;
+    margin-top: -71px;
 
     &::after {
       content: "";
@@ -29,5 +29,12 @@
       height: 34px;
       background-image: url("../img/bg-zigzag-fill.svg");
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    padding-top: 32px;
+    min-height: 249px;
+    margin-top: -76px;
   }
 }

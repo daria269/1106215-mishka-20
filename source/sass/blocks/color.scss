@@ -1,0 +1,30 @@
+.color {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 51px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    padding-bottom: 29px;
+  }
+}
+
+.color .form__legend {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
+}
+
+.color .option__item:not(:last-child) {
+  margin-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 21px;
+  }
+}

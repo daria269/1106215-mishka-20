@@ -1,17 +1,18 @@
 .toggle {
-  margin: 0 auto 30px;
+  margin: 0 auto;
   width: max-content;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
-    margin-right: 0;
+    margin-left: -18px;
     margin-bottom: 30px;
   }
 }
 
 .toggle__item {
   @include button-reset;
-  padding: 13px 40px;
+  padding: 13px 39px;
   border: 1px solid $grey-border;
   display: inline-flex;
   align-items: center;

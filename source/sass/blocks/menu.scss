@@ -10,7 +10,8 @@
 }
 
 .menu__item {
-  padding: 30px 75px;
+  padding: 27px;
+  padding-left: 76px;
   border-top: 1px solid $grey-border;
 
   @media (min-width: $tablet-width) {
@@ -35,7 +36,7 @@
     & .menu__item {
       border-bottom: none;
       border-left: 1px solid $grey-border;
-      height: 84px;
+      height: 88px;
       padding-right: 0;
       padding-left: 0;
     }
@@ -65,8 +66,11 @@
     & .menu__item {
       border-bottom: none;
       padding-top: 20px;
-      padding-right: 30px;
       padding-left: 0;
+    }
+
+    & .menu__item:first-child {
+      padding-right: 37px;
     }
   }
 
@@ -77,11 +81,13 @@
     flex-wrap: wrap;
 
     & .menu__item {
-      padding-top: 30px;
+      padding-top: 32px;
+      padding-bottom: 32px;
 
       &:nth-child(n+3) {
         display: block;
         padding-top: 20px;
+        padding-right: 63px;
       }
 
       &:nth-child(2) {
@@ -127,14 +133,14 @@
 .menu__icon {
   position: absolute;
   transform: translateX(-50%);
-  left: -30px;
+  left: -35px;
   color: $basic-black;
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {
     position: initial;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 32px;
+    margin-left: 32px;
     transform: none;
   }
 }

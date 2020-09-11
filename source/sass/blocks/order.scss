@@ -1,8 +1,15 @@
 .order {
-  padding: 20px 0 55px;
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 122px;
   }
 }
 
@@ -11,7 +18,7 @@
   font-size: 13px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -22,7 +29,7 @@
 
 .order__note.wrapper {
   @media (min-width: $desktop-width) {
-    padding-right: 200px;
-    padding-left: 240px;
+    padding-right: 225px;
+    padding-left: 225px;
   }
 }

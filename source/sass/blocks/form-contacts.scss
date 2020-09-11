@@ -1,13 +1,19 @@
 .form-contacts {
-  margin-bottom: 25px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
     padding-bottom: 50px;
+    padding-top: 47px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 200px;
-    padding-left: 100px;
+    padding-right: 225px;
+    padding-left: 110px;
+    padding-top: 39px;
+
+    & .option__input {
+      padding-bottom: 16px;
+    }
   }
 }
