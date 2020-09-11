@@ -16,10 +16,10 @@
     background-size: auto 23px;
 
     display: grid;
-    padding: 50px;
 
     grid-template-columns: 175px 1fr 50%;
-    padding-left: 170px;
+    padding-top: 93px;
+    padding-bottom: 105px;
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -59,8 +59,8 @@
     &::before {
       content: url("../img/icon-flag.svg");
       position: absolute;
-      top: -25px;
-      left: -100px;
+      top: -18px;
+      left: -111px;
     }
   }
 }

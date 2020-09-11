@@ -81,11 +81,13 @@
     flex-wrap: wrap;
 
     & .menu__item {
-      padding-top: 30px;
+      padding-top: 32px;
+      padding-bottom: 32px;
 
       &:nth-child(n+3) {
         display: block;
         padding-top: 20px;
+        padding-right: 63px;
       }
 
       &:nth-child(2) {

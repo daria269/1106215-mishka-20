@@ -3,6 +3,14 @@
 
   &:not(:last-child) {
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (max-width: $mobile-max-width) {
@@ -12,10 +20,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-
-    &:not(:last-child) {
-      margin-bottom: 54px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -148,10 +152,10 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    max-height: 334px;
+    height: 334px;
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 462px;
+    height: 462px;
   }
 }

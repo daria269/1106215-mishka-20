@@ -16,6 +16,10 @@
     margin-bottom: 60px;
     width: 95%;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .feedback__author {
@@ -24,6 +28,10 @@
   font-style: normal;
   line-height: 24px;
   text-transform: none;
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .feedback__author-nickname {
