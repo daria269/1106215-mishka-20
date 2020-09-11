@@ -159,6 +159,7 @@
 
   @media (min-width: $tablet-width) {
     height: 334px;
+    flex-shrink: 0;
   }
 
   @media (min-width: $desktop-width) {
