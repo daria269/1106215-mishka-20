@@ -1217,14 +1217,14 @@ img {
       width: 100%;
       padding-left: 18px; } }
 
-.option__textarea {
+.additional__textarea {
   margin: 20px 0 0 0;
   padding: 15px;
   width: 100%;
   border: 2px solid #444444;
   resize: none; }
   @media (min-width: 768px) {
-    .option__textarea {
+    .additional__textarea {
       margin: 0; } }
 
 .option__name {

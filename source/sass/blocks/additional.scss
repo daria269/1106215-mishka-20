@@ -1,14 +1,43 @@
 .additional {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
   @media (min-width: $tablet-width) {
-    align-items: inherit;
     padding-top: 50px;
     padding-bottom: 27px;
     margin: 0;
+    align-items: center;
+    width: auto;
+    display: grid;
+    grid-template-columns: 147px 1fr;
+    column-gap: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 225px;
     padding-left: 110px;
     margin: 0 auto;
+    grid-template-columns: 96px 1fr;
+  }
+}
+
+.additional__textarea {
+  margin: 23px 0 7px 0;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid $extra-dark;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
