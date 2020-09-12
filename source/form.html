@@ -65,66 +65,72 @@
         <h2 class="order__title visually-hidden">Заказать изделие</h2>
         <p class="order__note wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form form" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__element type wrapper">
-            <span class="form__legend">Тип</span>
-            <ul class="form__option option">
-              <li class="option__item">
-                <label class="option__name" for="accessory">
-                  <input class="option__radio visually-hidden" type="radio" id="accessory" value="accessory" name="type" checked><span class="option__radio-icon"></span>Аксессуар для интерьера</label>
-              </li>
-              <li class="option__item">
-                <label class="option__name" for="toy">
-                  <input class="option__radio visually-hidden" type="radio" id="toy" value="toy" name="type"><span class="option__radio-icon"></span>Детская игрушка</label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="color-wrapper">
-            <fieldset class="form__element color wrapper">
-              <span class="form__legend">Цвет</span>
+          <fieldset>
+            <div class="form__element type wrapper">
+              <span class="form__legend">Тип</span>
               <ul class="form__option option">
                 <li class="option__item">
-                  <label class="option__name" for="white">
-                    <input class="option__checkbox visually-hidden" type="checkbox" id="white" value="white" name="white" checked><span class="option__checkbox-icon"></span>Белый</label>
+                  <label class="option__name" for="accessory">
+                    <input class="option__radio visually-hidden" type="radio" id="accessory" value="accessory" name="type" checked><span class="option__radio-icon"></span>Аксессуар для интерьера</label>
                 </li>
                 <li class="option__item">
-                  <label class="option__name" for="grey">
-                    <input class="option__checkbox visually-hidden" type="checkbox" id="grey" value="grey" name="grey" checked><span class="option__checkbox-icon"></span>Серый</label>
-                </li>
-                <li class="option__item">
-                  <label class="option__name" for="tiffany">
-                    <input class="option__checkbox visually-hidden" type="checkbox" id="tiffany" value="tiffany" name="tiffany"><span class="option__checkbox-icon"></span>«Тиффани»</label>
-                </li>
-                <li class="option__item">
-                  <label class="option__name" for="black">
-                    <input class="option__checkbox visually-hidden" type="checkbox" id="black" value="black" name="black"><span class="option__checkbox-icon"></span>Черный</label>
-                </li>
-                <li class="option__item">
-                  <label class="option__name" for="pink">
-                    <input class="option__checkbox visually-hidden" type="checkbox" id="pink" value="pink" name="pink"><span class="option__checkbox-icon"></span>Розовый</label>
-                </li>
-                <li class="option__item">
-                  <label class="option__name" for="orange">
-                    <input class="option__checkbox visually-hidden" type="checkbox" id="orange" value="orange" name="orange"><span class="option__checkbox-icon"></span>Оранжевый</label>
+                  <label class="option__name" for="toy">
+                    <input class="option__radio visually-hidden" type="radio" id="toy" value="toy" name="type"><span class="option__radio-icon"></span>Детская игрушка</label>
                 </li>
               </ul>
+            </div>
+          </fieldset>
+          <div class="color-wrapper">
+            <fieldset>
+              <div class="form__element color wrapper">
+                <span class="form__legend">Цвет</span>
+                <ul class="form__option option">
+                  <li class="option__item">
+                    <label class="option__name" for="white">
+                      <input class="option__checkbox visually-hidden" type="checkbox" id="white" value="white" name="white" checked><span class="option__checkbox-icon"></span>Белый</label>
+                  </li>
+                  <li class="option__item">
+                    <label class="option__name" for="grey">
+                      <input class="option__checkbox visually-hidden" type="checkbox" id="grey" value="grey" name="grey" checked><span class="option__checkbox-icon"></span>Серый</label>
+                  </li>
+                  <li class="option__item">
+                    <label class="option__name" for="tiffany">
+                      <input class="option__checkbox visually-hidden" type="checkbox" id="tiffany" value="tiffany" name="tiffany"><span class="option__checkbox-icon"></span>«Тиффани»</label>
+                  </li>
+                  <li class="option__item">
+                    <label class="option__name" for="black">
+                      <input class="option__checkbox visually-hidden" type="checkbox" id="black" value="black" name="black"><span class="option__checkbox-icon"></span>Черный</label>
+                  </li>
+                  <li class="option__item">
+                    <label class="option__name" for="pink">
+                      <input class="option__checkbox visually-hidden" type="checkbox" id="pink" value="pink" name="pink"><span class="option__checkbox-icon"></span>Розовый</label>
+                  </li>
+                  <li class="option__item">
+                    <label class="option__name" for="orange">
+                      <input class="option__checkbox visually-hidden" type="checkbox" id="orange" value="orange" name="orange"><span class="option__checkbox-icon"></span>Оранжевый</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
           </div>
-          <fieldset class="form__element wrapper name">
-            <span class="form__legend">ФИО</span>
-            <ul class="form__option option">
-              <li class="option__item option__item--column">
-                <label class="option__name" for="name">Имя:</label>
-                <input class="option__input input" type="text" id="name" placeholder="Введите ваше имя*" required>
-              </li>
-              <li class="option__item option__item--column">
-                <label class="option__surname" for="surname">Фамилия:</label>
-                <input class="option__input input" type="text" id="surname" placeholder="Укажите фамилию*" required>
-              </li>
-              <li class="option__item option__item--column">
-                <label class="option__patronymic" for="patronymic">Отчество:</label>
-                <input class="option__input input" type="text" id="patronymic" placeholder="Отчество, если желаете">
-              </li>
-            </ul>
+          <fieldset>
+            <div class="form__element wrapper name">
+              <span class="form__legend">ФИО</span>
+              <ul class="form__option option">
+                <li class="option__item option__item--column">
+                  <label class="option__name" for="name">Имя:</label>
+                  <input class="option__input input" type="text" id="name" placeholder="Введите ваше имя*" required>
+                </li>
+                <li class="option__item option__item--column">
+                  <label class="option__surname" for="surname">Фамилия:</label>
+                  <input class="option__input input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+                </li>
+                <li class="option__item option__item--column">
+                  <label class="option__patronymic" for="patronymic">Отчество:</label>
+                  <input class="option__input input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <div class="color-wrapper">
             <ul class="form__option option form-contacts wrapper">
@@ -144,9 +150,9 @@
               </li>
             </ul>
           </div>
-          <div class="option__item option__item--column additional wrapper">
+          <div class="additional wrapper">
             <label class="form__legend" for="additional">Доп</label>
-            <textarea class="option__textarea input" id="additional" name="additional" rows="6" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="additional__textarea input" id="additional" name="additional" rows="6" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <div class="wrapper form__button-container">
             <p class="form__notice">*Поля обязательны для заполнения</p>

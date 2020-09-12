@@ -114,18 +114,6 @@
   }
 }
 
-.option__textarea {
-  margin: 23px 0 7px 0;
-  padding: 15px;
-  width: 100%;
-  border: 2px solid $extra-dark;
-  resize: none;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-}
-
 .option__name {
   cursor: pointer;
   display: flex;
