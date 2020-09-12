@@ -2,10 +2,13 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
-  padding: 30px 0;
+  padding: 0;
+  padding-top: 44px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding-top: 85px;
+    padding-bottom: 57px;
     background-size: auto 17px;
   }
 
@@ -13,10 +16,10 @@
     background-size: auto 23px;
 
     display: grid;
-    padding: 50px;
 
     grid-template-columns: 175px 1fr 50%;
-    padding-left: 170px;
+    padding-top: 93px;
+    padding-bottom: 105px;
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -26,13 +29,20 @@
   font-size: 18px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 50px;
+
+    &::before {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: -25px;
+      right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -49,8 +59,8 @@
     &::before {
       content: url("../img/icon-flag.svg");
       position: absolute;
-      top: -25px;
-      left: -100px;
+      top: -18px;
+      left: -111px;
     }
   }
 }
@@ -69,9 +79,10 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet@1x.jpg");
-    margin-bottom: 55px;
+    margin-bottom: 53px;
     margin-right: -50px;
     margin-left: -50px;
+    height: 457px;
 
     @include retina-dppx {
       background-image: url("../img/map-tablet@2x.jpg");
@@ -98,13 +109,13 @@
   display: grid;
   font-size: 15px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   row-gap: 30px;
 
   @media (min-width: $tablet-width) {
-    font-size: 15px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
+    font-size: 17px;
+    grid-template-columns: auto auto;
+    column-gap: 49px;
     margin-bottom: 50px;
   }
 
@@ -124,7 +135,7 @@
 
 .contacts__item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 76px 1fr;
   margin: 0;
 
   @media (min-width: $desktop-width) {
@@ -161,6 +172,10 @@
 .contacts__button {
   max-width: 520px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row-start: 3;

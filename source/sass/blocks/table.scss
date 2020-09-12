@@ -1,6 +1,6 @@
 .table {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 20px;
 }
@@ -8,7 +8,15 @@
 .table__row {
   border-bottom: 1px solid $grey-border;
   display: grid;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 38% 52%;
   padding: 10px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 33% 52%;
+  }
+}
+
+.table__value {
+  margin-left: 0;
 }

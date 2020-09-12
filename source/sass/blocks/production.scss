@@ -23,6 +23,7 @@
     flex-direction: column;
     max-width: 668px;
     margin-right: auto;
+    margin-bottom: 64px;
     margin-left: auto;
 
     &::after {
@@ -67,13 +68,19 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  padding: 30px;
+  padding-top: 35px;
+  padding-right: 30px;
+  padding-bottom: 41px;
+  padding-left: 33px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
-    padding: 0 40px 40px;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,8 +95,10 @@
   font-size: 17px;
   line-height: 24px;
   margin: 0;
-  padding: 20px;
-  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+  padding-left: 33px;
   position: relative;
   display: flex;
   align-items: center;
@@ -97,17 +106,21 @@
   &::before {
     content: url("../img/icon-video.svg");
     display: block;
-    margin-right: 30px;
+    margin-right: 25px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 40px 40px 30px;
+    padding-top: 36px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-right: 56px;
+    padding-top: 39px;
     flex-direction: column;
     align-items: flex-start;
     width: calc(100% - 682px);
@@ -115,13 +128,13 @@
     &::before {
       position: relative;
       display: block;
-      margin-bottom: 30px;
+      margin-bottom: 19px;
     }
   }
 }
 
 .production__button {
-  margin: 0 30px;
+  margin: 0 32px;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px 45px 40px;
@@ -150,7 +163,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
-    margin-top: -267px;
+    margin-top: -285px;
     width: calc(100% - 682px);
 
     &:hover::after {

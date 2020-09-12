@@ -1,27 +1,38 @@
 .feedback-list {
-  padding: 30px 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 46px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    padding-top: 80px;
-    padding-bottom: 115px;
+    background-size: auto 100%;
 
+    padding-top: 80px;
+    padding-bottom: 21px;
     display: grid;
     grid-template-columns: auto 180px;
     column-gap: 30px;
+    align-items: start;
+    margin-bottom: 67px;
 
     @include retina-dppx {
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 68px;
+  }
 }
 
 .feedback-list.wrapper {
   @media (min-width: $desktop-width) {
     max-width: 1050px;
+    margin-bottom: 66px;
     padding-left: 175px;
+    padding-right: 0;
   }
 }
 
@@ -42,7 +53,7 @@
     grid-column-end: 2;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -73,7 +84,8 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 15px 35px;
+    padding: 13px 38px;
+    margin-right: 0;
     margin-bottom: 40px;
     font-size: 17px;
 
