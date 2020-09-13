@@ -4,6 +4,11 @@
   @media (min-width: $tablet-width) {
     column-gap: 47px;
     margin-bottom: 0;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $tablet-width){
+    padding-bottom: 31px;
   }
 }
 
