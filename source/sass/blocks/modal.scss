@@ -90,7 +90,7 @@
   border: 2px solid $blue-border-link;
 }
 
-.modal_button {
+.modal__button {
   @include button-reset;
   width: 100%;
   background-color: $light-blue;
