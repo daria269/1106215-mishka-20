@@ -2,7 +2,7 @@
 
 const buyButtons = document.querySelectorAll('.product__button');
 const modalCart = document.querySelector('.modal');
-const buyBtnPromo =  document.querySelector('.popular-item__button');
+const buyBtnPromo = document.querySelector('.popular-item__button');
 
 const toggleMenu = document.querySelector('.navigation__toggle');
 const menu = document.querySelectorAll('.menu');
@@ -60,7 +60,7 @@ if (modalCart) {
 // Закрытие модалки по esc
 
 document.addEventListener('keydown', (e) => {
-  if(e.keyCode === 27) {
+  if (e.keyCode === 27) {
     modalCart.classList.add('hidden');
   }
 });
